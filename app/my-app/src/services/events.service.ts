@@ -1,4 +1,4 @@
-import eventsJson from '../data/artists.json';
+import eventsJson from '../data/events.json';
 
 export const getEvents = () => {
   return new Promise((resolve) => {

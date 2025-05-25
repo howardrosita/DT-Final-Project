@@ -1,0 +1,160 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "./src/data/events/bom-2.png",
+    "title": "The Book of Mormon",
+    "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
+    "location": "@San Francisco, CA - Golden Gate Theatre ",
+    "date": "March 4, 2020 - Dec 31, 2020",
+    "tags": [
+      "Theater",
+      "Musical",
+      "Comedy"
+    ],
+    "price": "$50 - $200",
+    "similar": [
+      "Glee",
+      "Grease",
+      "High School Musical",
+      "Arrested Development"
+    ],
+    "artists": [
+      {
+        "name": "Lea Salonga",
+        "id": 101,
+        "profile": "./src/data/artists/lea-salonga/lea-salonga-profile.jpg"
+      },
+      {
+        "name": "Martin Nievera",
+        "id": 102,
+        "profile": "./src/data/artists/martin-nievera/martin-nievera-profile.jpg"
+      },
+      {
+        "name": "Sarah Geronimo",
+        "id": 103,
+        "profile": "./src/data/artists/sarah-geronimo/sarah-geronimo-profile.jpg"
+      },
+      {
+        "name": "Bruno Mars",
+        "id": 104,
+        "profile": "./src/data/artists/bruno-mars/bruno-mars-profile.jpg"
+      }
+    ],
+    "usefulInfo": [
+      {
+        "title": "Live Event",
+        "icon": "./src/assets/liveEvent.png"
+      },
+      {
+        "title": "Golden Gate Theatre",
+        "icon": "./src/assets/location.png"
+      },
+      {
+        "title": "bookofmormon.com/about",
+        "icon": "./src/assets/globe.png"
+      },
+      {
+        "title": "Ages 16 & up",
+        "icon": "./src/assets/group.png"
+      }
+    ],
+    "socials": [
+      {
+        "name": "facebook",
+        "icon": "./src/assets/facebook.png"
+      },
+      {
+        "name": "instagram",
+        "icon": "./src/assets/instagram.png"
+      },
+      {
+        "name": "youtube",
+        "icon": "./src/assets/youtube.png"
+      },
+      {
+        "name": "twitter",
+        "icon": "./src/assets/twitter.png"
+      },
+      {
+        "name": "email",
+        "icon": "./src/assets/email.png"
+      }
+    ],
+    "vibe": [
+      "Chill",
+      "Upbeat",
+      "Funny",
+      "Playful"
+    ],
+    "more": [
+      {
+        "id": "mor1",
+        "imgUrl": "./src/data/events/sf-orchestra.png",
+        "title": "SF Orchestra",
+        "location": "San Francisco, CA",
+        "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+        "prices": [
+          {
+            "type": "Member",
+            "price": "$50"
+          },
+          {
+            "type": "Standard",
+            "price": "$100"
+          }
+        ]
+      },
+      {
+        "id": "mor2",
+        "imgUrl": "./src/data/events/hamilton.png",
+        "title": "Hamilton",
+        "location": "New York City, NY",
+        "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+        "prices": [
+          {
+            "type": "Member",
+            "price": "$50"
+          },
+          {
+            "type": "Standard",
+            "price": "$100"
+          }
+        ]
+      },
+      {
+        "id": "mor3",
+        "imgUrl": "./src/data/events/sf-soundbox.png",
+        "title": "SF Symphony Sound Box",
+        "location": "San Francisco, CA",
+        "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+        "prices": [
+          {
+            "type": "Member",
+            "price": "$50"
+          },
+          {
+            "type": "Standard",
+            "price": "$100"
+          }
+        ]
+      },
+      {
+        "id": "mor4",
+        "imgUrl": "./src/data/events/moulin-rouge.png",
+        "title": "Moulin Rouge",
+        "location": "New York City, NY",
+        "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+        "prices": [
+          {
+            "type": "Member",
+            "price": "$50"
+          },
+          {
+            "type": "Standard",
+            "price": "$100"
+          }
+        ]
+      }
+    ]
+  }
+]
