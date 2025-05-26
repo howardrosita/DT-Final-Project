@@ -22,22 +22,22 @@
       {
         "name": "Lea Salonga",
         "id": 101,
-        "profile": "./src/data/artists/lea-salonga/lea-salonga-profile.jpg"
+        "profile": "./src/data/artists/lea-salonga/lea-salonga-profile-1.jpg"
       },
       {
         "name": "Martin Nievera",
         "id": 102,
-        "profile": "./src/data/artists/martin-nievera/martin-nievera-profile.jpg"
+        "profile": "./src/data/artists/martin-nievera/martin-nievera-profile-1.jpg"
       },
       {
         "name": "Sarah Geronimo",
         "id": 103,
-        "profile": "./src/data/artists/sarah-geronimo/sarah-geronimo-profile.jpg"
+        "profile": "./src/data/artists/sarah-geronimo/sarah-geronimo-profile-1.jpg"
       },
       {
         "name": "Bruno Mars",
         "id": 104,
-        "profile": "./src/data/artists/bruno-mars/bruno-mars-profile.jpg"
+        "profile": "./src/data/artists/bruno-mars/bruno-mars-profile-1.jpg"
       }
     ],
     "usefulInfo": [

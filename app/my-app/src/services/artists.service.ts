@@ -1,9 +1,10 @@
 import artistsJson from '../data/artists.json';
 
-export const getArtists = () => {
+export const getArtistInfo = (id: number) => {
   return new Promise((resolve) => {
+    const findArtist = artistsJson.find((artist) => artist.id === id);
     setTimeout(() => {
-      resolve(artistsJson);
+      resolve(findArtist);
     }, 1500)
   });
 };
