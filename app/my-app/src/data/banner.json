@@ -1,0 +1,15 @@
+[
+  {
+    "title": "The Book of Mormon",
+    "location": {
+      "city": "San Francisco",
+      "state": "CA",
+      "venue": "Golden Gate Theatre"
+    },
+    "dateRange": {
+      "start": "March 4, 2020",
+      "end": "Dec 31, 2020"
+    },
+    "tags": ["Theater", "Musical", "Comedy"]
+  }
+]

@@ -1,9 +1,47 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
+import { NavBar } from "./NavBar";
+import { SideBar } from "./SideBar";
+import { Tags } from "./Tags.jsx";
+import bannerImg from "../../assets/images/banner-bg.png";
+import { getData } from "../../services/banner.service";
+import { HeroText } from "./HeroText";
+export const HeroMain = () => {
+  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+  const [event, setEvent] = useState();
 
-export const HeroBanner = () => {
+  useEffect(() => {
+    getData().then((data) => {
+      setEvent(data[0]);
+    });
+  }, []);
+  const toggleSidebarVisibility = () => {
+    setIsSidebarVisible(!isSidebarVisible);
+  };
+
+  if (!event) return <div>Loading...</div>;
+  console.log("Event tags:", event.tags);
   return (
-    <div>
-      <div></div>
+    <div
+      style={{
+        backgroundImage: `url(${bannerImg})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
+      <div>
+        <NavBar toggleSidebarVisibility={toggleSidebarVisibility} />
+        <SideBar isSidebarVisible={isSidebarVisible} />
+      </div>
+      <div
+        style={{
+          padding: "50px 120px",
+          marginTop: "208px",
+        }}
+      >
+        <HeroText event={event} />
+        {event.tags && <Tags tags={event.tags} />}
+      </div>
     </div>
   );
 };
