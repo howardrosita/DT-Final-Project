@@ -3,7 +3,7 @@ import LocationPin from "../../assets/images/pin-icon.png";
 export const HeroText = ({ event }) => {
   return (
     <div>
-      <h1>{event.title}</h1>
+      <h1 style={{ fontSize: "40px" }}>{event.title}</h1>
       <p
         style={{
           display: "flex",

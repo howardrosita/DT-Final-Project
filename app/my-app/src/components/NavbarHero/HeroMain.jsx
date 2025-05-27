@@ -36,7 +36,7 @@ export const HeroMain = () => {
       <div
         style={{
           padding: "50px 120px",
-          marginTop: "208px",
+          marginTop: "158px",
         }}
       >
         <HeroText event={event} />
