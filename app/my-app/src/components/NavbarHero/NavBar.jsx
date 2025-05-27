@@ -17,8 +17,8 @@ export const NavBar = ({ toggleSidebarVisibility }) => {
         <div class="nav-button">
           <div class="burger-icon" onClick={toggleSidebarVisibility}>
             <svg
-              width="22"
-              height="14"
+              width="19.5"
+              height="12"
               viewBox="0 0 22 14"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -49,8 +49,8 @@ export const NavBar = ({ toggleSidebarVisibility }) => {
           <div class="user-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               fill="none"
               stroke="white"
               stroke-width="2"

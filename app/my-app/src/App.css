@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+body {
+  color: #fff;
+}
+.sidebar {
+  width: 280px;
+  background-color: #25262b;
+  border-radius: 10px;
+  position: fixed;
+  right: 30px;
+  top: 60px;
+}
+.account-section {
+  padding: 0 20px;
+}
+.account-section .title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.account-section .subtitle {
+  font-size: 13px;
+  color: #ccc;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sign-up {
+  width: 120px;
+  height: 35px;
+  background: linear-gradient(90deg, #c22026, #c400cb);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.log-in {
+  width: 120px;
+  height: 35px;
+  background-color: #111;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 12px 20px;
+  border-top: 1px solid #141414;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.menu li span {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu li span img {
+  width: 22px;
+  height: 22px;
+}
+
+.navBarHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 32px;
+}
+.burgerBtn {
+  display: flex;
+  align-items: center;
+}
+.eventBtn {
+  display: flex;
+  align-items: center;
+}
+.eventBtn img {
+  margin-right: 16px;
+}
+.eventBtn p {
+  margin: 0 32px 0 0;
+}
+.nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 80px;
+  height: 40px;
+  background-color: #1e1f22;
+  border-radius: 100px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 18, 63, 0.06),
+    0px 4px 8px 0px rgba(0, 18, 63, 0.06);
+}
+.burger-icon {
+  cursor: pointer;
+}
+.burger-icon svg,
+.user-icon svg {
+  display: block;
+}
+
+.user-icon {
+  background-color: #101010; /* matches the dark circle behind user icon */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+.tags {
+  display: flex;
+  gap: 8px;
+}
+.tags .tag {
+  width: 90px;
+  height: 32px;
+  border: 1px solid #c22026;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: rgba(194, 32, 38, 0.16);
 }

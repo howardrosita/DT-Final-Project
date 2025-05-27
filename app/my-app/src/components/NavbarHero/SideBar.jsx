@@ -1,6 +1,10 @@
 import React from "react";
 import "../../App.css";
-
+import MagnifyingIcon from "../../assets/images/magnifying-glass1.png";
+import HeartIcon from "../../assets/images/heart-icon.png";
+import StarIcon from "../../assets/images/star-icon.png";
+import NewsIcon from "../../assets/images/announcement-icon.png";
+import WatchIcon from "../../assets/images/movie-player-icon.png";
 export const SideBar = ({ isSidebarVisible }) => {
   return (
     <>
@@ -18,19 +22,34 @@ export const SideBar = ({ isSidebarVisible }) => {
           </div>
           <ul class="menu">
             <li>
-              <span>🔍</span> Search Events
+              <span>
+                <img src={MagnifyingIcon} alt="" />
+              </span>
+              Search Events
             </li>
             <li>
-              <span>🤍</span> Follow Art Organizations
+              <span>
+                <img src={HeartIcon} alt="" />
+              </span>
+              Follow Art Organizations
             </li>
             <li>
-              <span>⭐</span> Highlight Video
+              <span>
+                <img src={StarIcon} alt="" />
+              </span>
+              Highlight Video
             </li>
             <li>
-              <span>📰</span> Latest News
+              <span>
+                <img src={NewsIcon} alt="" />
+              </span>
+              Latest News
             </li>
             <li>
-              <span>▶️</span> Watch
+              <span>
+                <img src={WatchIcon} alt="" />
+              </span>
+              Watch
             </li>
           </ul>
         </div>
