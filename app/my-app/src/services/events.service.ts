@@ -1,5 +1,7 @@
 import eventsJson from "../data/events.json";
 
+// I defined the type for the event information based on the structure of the JSON data.
+// This will help in ensuring type safety when working with event data throughout the application.
 export type TEventInfo = {
   id: number;
   title: string;
