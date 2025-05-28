@@ -6,7 +6,6 @@ import { Tags } from "./Tags.jsx";
 import bannerImg from "../../assets/images/banner-bg.png";
 import { getData } from "../../services/banner.service";
 import { HeroText } from "./HeroText";
-import BrunoMars from "../../assets/images/bruno-mars-bg-1.jpg";
 export const HeroMain = () => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
   const [event, setEvent] = useState();
@@ -21,7 +20,6 @@ export const HeroMain = () => {
   };
 
   if (!event) return <div>Loading...</div>;
-  console.log("Event tags:", event.tags);
   return (
     <div
       style={{
