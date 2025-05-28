@@ -12,11 +12,9 @@ export const HeroText = ({ event }) => {
         }}
       >
         <img src={LocationPin} alt=""></img>
-        {event.location.city}, - {event.location.venue}
+        {event.location}
       </p>
-      <p>
-        {event.dateRange.start} - {event.dateRange.end}
-      </p>
+      <p>{event.date}</p>
     </div>
   );
 };
