@@ -1,7 +1,11 @@
 body {
   color: #fff;
 }
-
+.navBarHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
 .sidebar {
   width: 280px;
   background-color: #25262b;
@@ -9,21 +13,6 @@ body {
   position: fixed;
   right: 30px;
   top: 60px;
-}
-.account-section {
-  padding: 0 20px;
-}
-.account-section .title {
-  font-weight: bold;
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.account-section .subtitle {
-  font-size: 13px;
-  color: #ccc;
-  margin-top: 0;
-  margin-bottom: 15px;
 }
 
 .buttons {
