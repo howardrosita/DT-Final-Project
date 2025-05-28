@@ -1,5 +1,5 @@
 import React from "react";
-import "../../banner.css";
+import "../../Banner.css";
 import logo from "../../assets/images/logo.png";
 import ticketIcon from "../../assets/images/ticket-icon.svg";
 

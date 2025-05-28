@@ -1,5 +1,5 @@
 import React from "react";
-import "../../banner.css";
+import "../../Banner.css";
 import MagnifyingIcon from "../../assets/images/magnifying-glass1.png";
 import HeartIcon from "../../assets/images/heart-icon.png";
 import StarIcon from "../../assets/images/star-icon.png";
