@@ -1,5 +1,5 @@
 import React from "react";
-import "../../banner.css";
+import "../../Banner.css";
 import MagnifyingIcon from "../../assets/images/magnifying-glass1.png";
 import HeartIcon from "../../assets/images/heart-icon.png";
 import StarIcon from "../../assets/images/star-icon.png";
@@ -25,31 +25,31 @@ export const SideBar = ({ isSidebarVisible }) => {
               <span>
                 <img src={MagnifyingIcon} alt="" />
               </span>
-              Search Events
+              <span className="menu-label">Search Events</span>
             </li>
             <li>
               <span>
                 <img src={HeartIcon} alt="" />
               </span>
-              Follow Art Organizations
+              <span className="menu-label">Follow Art Organizations</span>
             </li>
             <li>
               <span>
                 <img src={StarIcon} alt="" />
               </span>
-              Highlight Video
+              <span className="menu-label">Highlight Video</span>
             </li>
             <li>
               <span>
                 <img src={NewsIcon} alt="" />
               </span>
-              Latest News
+              <span className="menu-label">Latest News</span>
             </li>
             <li>
               <span>
                 <img src={WatchIcon} alt="" />
               </span>
-              Watch
+              <span className="menu-label">Watch</span>
             </li>
           </ul>
         </div>
