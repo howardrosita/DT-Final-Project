@@ -9,18 +9,18 @@ export const SideBar = ({ isSidebarVisible }) => {
   return (
     <>
       {isSidebarVisible && (
-        <div class="sidebar">
-          <div class="account-section">
-            <p class="title">Create your account!</p>
-            <p class="subtitle">
+        <div className="sidebar">
+          <div className="account-section">
+            <p className="title">Create your account!</p>
+            <p className="subtitle">
               Get personalized event recommendations tailored just for you!
             </p>
-            <div class="buttons">
-              <button class="sign-up">Sign up</button>
-              <button class="log-in">Log in</button>
+            <div className="buttons">
+              <button className="sign-up">Sign up</button>
+              <button className="log-in">Log in</button>
             </div>
           </div>
-          <ul class="menu">
+          <ul className="menu">
             <li>
               <span>
                 <img src={MagnifyingIcon} alt="" />

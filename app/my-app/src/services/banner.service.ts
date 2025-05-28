@@ -1,4 +1,4 @@
-import eventsJson from "../data/banner.json";
+import eventsJson from "../data/events.json";
 export const getData = () => {
   return new Promise((resolve) => {
     setTimeout(() => {

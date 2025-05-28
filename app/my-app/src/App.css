@@ -1,6 +1,11 @@
 body {
   color: #fff;
 }
+.navBarHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
 .sidebar {
   width: 280px;
   background-color: #25262b;

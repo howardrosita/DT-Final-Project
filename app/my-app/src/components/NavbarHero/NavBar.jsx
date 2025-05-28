@@ -14,8 +14,8 @@ export const NavBar = ({ toggleSidebarVisibility }) => {
           <img src={ticketIcon} alt=""></img>
           <p>Events</p>
         </div>
-        <div class="nav-button">
-          <div class="burger-icon" onClick={toggleSidebarVisibility}>
+        <div className="nav-button">
+          <div className="burger-icon" onClick={toggleSidebarVisibility}>
             <svg
               width="19.5"
               height="12"
@@ -26,23 +26,23 @@ export const NavBar = ({ toggleSidebarVisibility }) => {
               <path
                 d="M1.25 13.0029H20.75"
                 stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M1.25 7.00293H20.75"
                 stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M1.25 1.00293H20.75"
                 stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </div>
@@ -53,9 +53,9 @@ export const NavBar = ({ toggleSidebarVisibility }) => {
               height="20"
               fill="none"
               stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               class="feather feather-user"
               viewBox="0 0 24 24"
             >
