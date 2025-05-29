@@ -26,6 +26,7 @@ export const HeroMain = () => {
         backgroundImage: `url(${bannerImg})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       <div>

@@ -46,7 +46,7 @@ export const NavBar = ({ toggleSidebarVisibility }) => {
               />
             </svg>
           </div>
-          <div class="user-icon">
+          <div className="user-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
