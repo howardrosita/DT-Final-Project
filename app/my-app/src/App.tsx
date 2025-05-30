@@ -1,21 +1,15 @@
-// import logo from "./logo.svg";
 import "./App.css";
-// import { HeroMain } from "./components/NavbarHero/HeroMain";
-import AboutEvent from "./components/AboutEvents";
-import NavBackground from "./components/NavbarHero/NavBackground";
-import NavBar from "./components/NavbarHero/NavBar";
 import { EventInfo } from "./components/pages/EventInfo";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-
-      {
-        <EventInfo />
-        /* <AboutEvent /> */
-      }
-
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<EventInfo />} />
+        {/* <Route path="/artist/:id" element={<ArtistInfo />} /> */}
+      </Routes>
+    </Router>
   );
 }
 
