@@ -5,6 +5,7 @@ import NavBar from "../NavbarHero/NavBar";
 import Artists from "../Artists/Artists";
 import LocationPin from "../../assets/images/pin-icon.png";
 import { HeroText } from "../NavbarHero/HeroText";
+import AboutEvent from "../AboutEvents";
 //dito i cocompile mga component
 const PageContents = ({ event }) => {
   return (
@@ -22,6 +23,7 @@ const PageContents = ({ event }) => {
     >
       <HeroText event={event} />
       {/* <AboutSection /> */}
+      <AboutEvent />
       {/* <Artists artists={event.artists} /> */}
       {/* <MoreSection /> */}
       {/* <Footer /> */}
