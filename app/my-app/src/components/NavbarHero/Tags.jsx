@@ -1,6 +1,6 @@
 import React from "react";
 
-export const eventTags = ({ tags }) => {
+export const Tags = ({ tags }) => {
   const normalizedTags = Array.isArray(tags)
     ? tags
     : typeof tags === "string"

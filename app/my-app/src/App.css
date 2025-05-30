@@ -1,16 +1,6 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  color: #fff;
+  background: #333;
 }
 
 .App-header {
@@ -28,11 +18,152 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-background {
+  width: 100%;
+  height: 600px;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  height: 88px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+
+.nav-inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.side-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  .event-ticket,
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+  .event-ticket {
+    gap: 1rem;
+  }
+
+  .navbar-menu {
+    border-radius: 100px;
+    width: 80px;
+    height: 40px;
+    gap: 0.4rem;
+    background-color: #1e1f22;
+    position: relative;
+  }
+
+  .menu-icon {
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-icon.menu-btn {
+    cursor: pointer;
+  }
+
+  .menu-icon.user {
+    background-color: #101010;
+  }
+}
+
+.menu {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  background-color: #1e1f22;
+  color: white;
+  border-radius: 10px;
+  width: 310px;
+  overflow: hidden;
+  animation: hoverUp 0.3s ease;
+
+  .menu-icons {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .menu-create-account {
+    border-bottom: 1px solid black;
+  }
+
+  .menu-create-account p {
+    font-size: small;
+    color: gainsboro;
+  }
+
+  .menu-options {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0 20px;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+  }
+
+  .create-account-details {
+    padding: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .create-btns-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  .create-btn {
+    width: 100%;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .create-btn.signup {
+    background-image: linear-gradient(90deg, #c22026, #c400cb);
+  }
+
+  .create-btn.login {
+    background-color: #101010;
+  }
+}
+
+@keyframes hoverUp {
+  from {
+    top: 5;
+  }
+
   to {
-    transform: rotate(360deg);
+    top: 3;
   }
 }
