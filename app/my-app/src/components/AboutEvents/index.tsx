@@ -1,6 +1,7 @@
 import "./styles.css";
 import { useEffect, useState } from "react";
 import { getEvents, TEventInfo } from "../../services/events.service";
+import React from "react";
 
 const AboutEvent = () => {
   const [eventDetails, setEventDetails] = useState<TEventInfo[]>();
@@ -21,12 +22,9 @@ const AboutEvent = () => {
       {eventDetails && eventDetails.length > 0 ? (
         <div className="about_event_container">
           {eventDetails.map((event) => (
-            <>
+            <React.Fragment key={`event-${event.id}-${event.title}`}>
               {/* Left component */}
-              <div
-                key={`event-left-${event.title}`}
-                className="about_event_left"
-              >
+              <div className="about_event_left">
                 <div className="header">
                   <h2>About the event</h2>
                   <p>{event.description}</p>
@@ -57,10 +55,7 @@ const AboutEvent = () => {
               </div>
 
               {/* Right component similar to sidebar */}
-              <div
-                key={`event-right-${event.title}`}
-                className="about_event_right"
-              >
+              <div className="about_event_right">
                 {/* Price range card */}
                 <div
                   className="card"
@@ -72,8 +67,10 @@ const AboutEvent = () => {
                 >
                   {/* Card content */}
                   <div className="card_content">
-                    <h2>Price Range</h2>
-                    <span>{event.price}</span>
+                    <div className="card_header">
+                      <h2>Price Range</h2>
+                      <span>{event.price}</span>
+                    </div>
                   </div>
 
                   {/* Card action */}
@@ -92,34 +89,36 @@ const AboutEvent = () => {
                     alignItems: "flex-start",
                   }}
                 >
-                  {/* Header card */}
-                  <div className="card_header">
-                    <h2>Useful Info</h2>
-                  </div>
-                  <span className="separator" />
-
                   {/* Card Content */}
                   <div className="card_content">
+                    {/* Header card */}
+                    <div className="card_header">
+                      <h2>Useful Info</h2>
+                    </div>
+                    <span className="separator" />
+
                     <ul className="useful_info_list">
                       {event.usefulInfo.map((info, index) => (
-                        <li key={index} className="list_item">
-                          <img
-                            src={info.icon}
-                            alt={info.title}
-                            aria-label={info.title}
-                            title={info.title}
-                            className="svg_icon_img"
-                          />
+                        <React.Fragment key={`useful-info-${index}`}>
+                          <li className="list_item">
+                            <img
+                              src={info.icon}
+                              alt={info.title}
+                              aria-label={info.title}
+                              title={info.title}
+                              className="svg_icon_img"
+                            />
 
-                          <a
-                            href={info.title}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            {info.title}
-                          </a>
+                            <a
+                              href={info.title}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {info.title}
+                            </a>
+                          </li>
                           <span className="separator" />
-                        </li>
+                        </React.Fragment>
                       ))}
                     </ul>
                   </div>
@@ -144,7 +143,7 @@ const AboutEvent = () => {
                   </div>
                 </div>
               </div>
-            </>
+            </React.Fragment>
           ))}
         </div>
       ) : (
