@@ -1,10 +1,8 @@
 :root {
   --btn-bg-color-red: rgba(194, 32, 38, 0.16);
-  --btn-red-gradient: linear-gradient(
-    120deg,
-    rgba(194, 32, 38, 1) 30%,
-    rgba(196, 0, 203, 1) 85%
-  );
+  --btn-red-gradient: linear-gradient(120deg,
+      rgba(194, 32, 38, 1) 30%,
+      rgba(196, 0, 203, 1) 85%);
   --bg-card-color: rgba(30, 31, 34, 1);
 }
 
@@ -27,19 +25,16 @@ p {
 }
 
 div.about_event_container {
-  min-height: 100dvh;
-  background-color: black;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 1rem;
+  margin-top: 48px;
 
   & div.about_event_left {
     flex: 1 0 60%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem;
   }
 
   & div.about_event_right {
@@ -52,7 +47,7 @@ div.about_event_container {
 }
 
 div.about_event_left {
-  & > div.tags {
+  &>div.tags {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -62,7 +57,7 @@ div.about_event_left {
       flex-wrap: wrap;
       gap: 0.5rem;
 
-      & > button.tag_btn {
+      &>button.tag_btn {
         background-color: var(--btn-bg-color-red);
         border: red 1px solid;
         color: white;
@@ -81,7 +76,7 @@ div.about_event_left {
     }
   }
 
-  & > .similar_shows {
+  &>.similar_shows {
     display: flex;
     flex-direction: column;
 
@@ -109,16 +104,16 @@ div.about_event_left {
     flex-direction: column;
     gap: 0.5rem;
 
-    & > .card_header {
+    &>.card_header {
       padding: 1rem;
 
-      & > h2 {
+      &>h2 {
         font-size: 1.25rem;
       }
     }
   }
 
-  & > ul.useful_info_list {
+  &>ul.useful_info_list {
     display: flex;
     flex-direction: column;
     list-style-type: none;
@@ -152,7 +147,7 @@ div.about_event_left {
   gap: 0.5rem;
   padding: 0.5rem;
 
-  & > button:not(.social_btn) {
+  &>button:not(.social_btn) {
     background: var(--btn-bg-color-red);
     background: var(--btn-red-gradient);
     color: white;
@@ -178,13 +173,14 @@ div.about_event_left {
   cursor: pointer;
   max-width: 0.5rem;
   transition: background-color 0.3s ease;
+
   &:hover {
     background-color: #333;
   }
 }
 
 .card_header {
-  & > span {
+  &>span {
     font-size: 0.875rem;
   }
 }
