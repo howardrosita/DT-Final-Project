@@ -167,3 +167,19 @@ nav {
     top: 3;
   }
 }
+
+.tags {
+  display: flex;
+  gap: 8px;
+}
+
+.tags .tag {
+  width: 90px;
+  height: 32px;
+  border: 1px solid #c22026;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: rgba(194, 32, 38, 0.16);
+}
