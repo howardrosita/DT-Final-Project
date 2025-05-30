@@ -22,7 +22,7 @@ const PageContents = ({ event }) => {
     >
       <HeroText event={event} />
       {/* <AboutSection /> */}
-      <Artists artists={event.artists} />
+      {/* <Artists artists={event.artists} /> */}
       {/* <MoreSection /> */}
       {/* <Footer /> */}
     </div>
