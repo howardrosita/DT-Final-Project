@@ -2,6 +2,7 @@ import "./styles.css";
 import { useEffect, useState } from "react";
 import { getEvents, TEventInfo } from "../../services/events.service";
 import React from "react";
+import Artists from "../Artists/Artists";
 
 const AboutEvent = () => {
   const [eventDetails, setEventDetails] = useState<TEventInfo[]>();
@@ -52,6 +53,7 @@ const AboutEvent = () => {
                     ))}
                   </ul>
                 </div>
+                <Artists artists={event.artists} />
               </div>
 
               {/* Right component similar to sidebar */}
