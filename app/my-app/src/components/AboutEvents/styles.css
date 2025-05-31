@@ -1,9 +1,16 @@
 :root {
   --btn-bg-color-red: rgba(194, 32, 38, 0.16);
-  --btn-red-gradient: linear-gradient(120deg,
-      rgba(194, 32, 38, 1) 30%,
-      rgba(196, 0, 203, 1) 85%);
+  --btn-red-gradient: linear-gradient(
+    120deg,
+    rgba(194, 32, 38, 1) 30%,
+    rgba(196, 0, 203, 1) 85%
+  );
   --bg-card-color: rgba(30, 31, 34, 1);
+  --event-gap: 1rem;
+  --event-card-border-radius: 1rem;
+  --event-card-gap: 24px;
+  --h2-size: 1rem;
+  --btn-size: 2rem;
 }
 
 h2 {
@@ -27,14 +34,14 @@ p {
 div.about_event_container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: var(--event-gap);
   margin-top: 48px;
 
   & div.about_event_left {
     flex: 1 0 60%;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--event-gap);
   }
 
   & div.about_event_right {
@@ -42,12 +49,12 @@ div.about_event_container {
     display: flex;
     flex-direction: column;
     max-height: fit-content;
-    gap: 1rem;
+    gap: var(--event-card-gap);
   }
 }
 
 div.about_event_left {
-  &>div.tags {
+  & > div.tags {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -57,7 +64,9 @@ div.about_event_left {
       flex-wrap: wrap;
       gap: 0.5rem;
 
-      &>button.tag_btn {
+      & > button.tag_btn {
+        display: flex;
+        align-items: center;
         background-color: var(--btn-bg-color-red);
         border: red 1px solid;
         color: white;
@@ -67,6 +76,7 @@ div.about_event_left {
         text-decoration: none;
         font-size: 0.875rem;
         max-width: fit-content;
+        height: var(--btn-size);
         transition: background-color 0.3s ease;
 
         &:hover {
@@ -76,7 +86,7 @@ div.about_event_left {
     }
   }
 
-  &>.similar_shows {
+  & > .similar_shows {
     display: flex;
     flex-direction: column;
 
@@ -90,7 +100,7 @@ div.about_event_left {
 
 .card {
   background-color: var(--bg-card-color);
-  border-radius: 0.5rem;
+  border-radius: var(--event-card-border-radius);
 }
 
 .card_content {
@@ -104,23 +114,23 @@ div.about_event_left {
     flex-direction: column;
     gap: 0.5rem;
 
-    &>.card_header {
+    & > .card_header {
       padding: 1rem;
 
-      &>h2 {
-        font-size: 1.25rem;
+      & > h2 {
+        font-size: var(--h2-size);
       }
     }
   }
 
-  &>ul.useful_info_list {
+  & > ul.useful_info_list {
     display: flex;
     flex-direction: column;
     list-style-type: none;
     padding: 0;
     margin: 0;
 
-    & li:has(img.svg_icon_img, span.separator).list_item {
+    & li:has(img.svg_icon_img).list_item {
       display: flex;
       align-items: center;
       font-size: 1rem;
@@ -135,7 +145,7 @@ div.about_event_left {
         display: inline-block;
         background-size: cover;
         background-position: center;
-        margin-inline-end: 0.5rem;
+        margin-inline-end: 1rem;
       }
     }
   }
@@ -144,10 +154,10 @@ div.about_event_left {
 .card_actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: var(--event-gap);
   padding: 0.5rem;
 
-  &>button:not(.social_btn) {
+  & > button:not(.social_btn) {
     background: var(--btn-bg-color-red);
     background: var(--btn-red-gradient);
     color: white;
@@ -180,7 +190,7 @@ div.about_event_left {
 }
 
 .card_header {
-  &>span {
+  & > span {
     font-size: 0.875rem;
   }
 }
@@ -196,7 +206,6 @@ div.about_event_left {
 
 .loading_container {
   min-height: 100dvh;
-  background-color: black;
   color: white;
   display: flex;
   justify-content: center;
