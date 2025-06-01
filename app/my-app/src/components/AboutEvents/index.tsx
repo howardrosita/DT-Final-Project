@@ -3,6 +3,11 @@ import { useEffect, useState } from "react";
 import { getEvents, TEventInfo } from "../../services/events.service";
 import React from "react";
 import Artists from "../Artists/Artists";
+import Card, { CardActions, CardContent, CardHeader } from "./components/card";
+import SimilarShows from "./components/SimilarShows";
+import Tags from "./components/Tags";
+import UsefulInfo from "./components/UsefulInfo";
+import SocialInfo from "./components/SocialInfo";
 
 const AboutEvent = () => {
   const [eventDetails, setEventDetails] = useState<TEventInfo[]>();
@@ -31,60 +36,35 @@ const AboutEvent = () => {
                   <p>{event.description}</p>
                 </div>
 
-                <div className="tags">
-                  <h3>Vibe</h3>
-                  {/* Tags button */}
-                  <div className="tag_buttons">
-                    {event.tags.map((tag, index) => (
-                      <button key={index} className="tag_btn">
-                        {tag}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="similar_shows">
-                  <h3>Similar to these Netflix Shows</h3>
-                  <ul className="shows_list_items">
-                    {event.similar.map((show, index) => (
-                      <li key={index} className="show_item">
-                        {show}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <Tags tags={event.tags} />
+                <SimilarShows similarEvents={event.similar} />
                 <Artists artists={event.artists} />
               </div>
 
               {/* Right component similar to sidebar */}
               <div className="about_event_right">
                 {/* Price range card */}
-                <div
-                  className="card"
-                  style={{
+                <Card
+                  styles={{
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
                   }}
                 >
                   {/* Card content */}
-                  <div className="card_content">
-                    <div className="card_header">
-                      <h2>Price Range</h2>
-                      <span>{event.price}</span>
-                    </div>
-                  </div>
+                  <CardContent>
+                    <CardHeader title="Price Range" subtitle={event.price} />
+                  </CardContent>
 
                   {/* Card action */}
-                  <div className="card_actions">
+                  <CardActions>
                     <button>Tickets</button>
-                  </div>
-                </div>
+                  </CardActions>
+                </Card>
 
                 {/* Useful info card */}
-                <div
-                  className="card"
-                  style={{
+                <Card
+                  styles={{
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
@@ -92,58 +72,19 @@ const AboutEvent = () => {
                   }}
                 >
                   {/* Card Content */}
-                  <div className="card_content">
+                  <CardContent>
                     {/* Header card */}
-                    <div className="card_header">
-                      <h2>Useful Info</h2>
-                    </div>
+                    <CardHeader title="Useful Info" />
                     <span className="separator" />
 
-                    <ul className="useful_info_list">
-                      {event.usefulInfo.map((info, index) => (
-                        <React.Fragment key={`useful-info-${index}`}>
-                          <li className="list_item">
-                            <img
-                              src={info.icon}
-                              alt={info.title}
-                              aria-label={info.title}
-                              title={info.title}
-                              className="svg_icon_img"
-                            />
-
-                            <a
-                              href={info.title}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              {info.title}
-                            </a>
-                          </li>
-                          <span className="separator" />
-                        </React.Fragment>
-                      ))}
-                    </ul>
-                  </div>
+                    <UsefulInfo usefulInfo={event.usefulInfo} />
+                  </CardContent>
 
                   {/* Card Action */}
-                  <div className="card_actions">
-                    {event.socials.map((social, index) => (
-                      <a
-                        key={index}
-                        href={social.name}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="social_btn"
-                      >
-                        <img
-                          src={social.icon}
-                          alt={social.name}
-                          className="svg_icon_img"
-                        />
-                      </a>
-                    ))}
-                  </div>
-                </div>
+                  <CardActions>
+                    <SocialInfo socialLinks={event.socials} />
+                  </CardActions>
+                </Card>
               </div>
             </React.Fragment>
           ))}
