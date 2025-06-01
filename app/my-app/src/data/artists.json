@@ -1,16 +1,51 @@
 [
 	{
 		"id": 101,
-		"name": "Lea Salonga",
-		"profile": "./src/data/artists/lea-salonga/lea-salonga-profile-1.jpg",
-		"backdrop": "./src/data/artists/lea-salonga/lea-salonga-bg-1.jpg",
+		"title": "Lea Salonga",
+		"profile": "/src/data/artists/lea-salonga/lea-salonga-profile-1.jpg",
+		"imageUrl": "/src/data/artists/lea-salonga/lea-salonga-bg-1.jpg",
 		"about1": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
 		"about2": " Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
 		"about3": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
-		"email": "donaldglover.com",
+		"usefulInfo": [
+			{
+				"title": "donaldglover.com",
+				"icon": "./src/assets/globe.png"
+			}
+		],
+		"socials": [
+			{
+				"name": "facebook",
+				"icon": "./src/assets/facebook.png"
+			},
+			{
+				"name": "instagram",
+				"icon": "./src/assets/instagram.png"
+			},
+			{
+				"name": "youtube",
+				"icon": "./src/assets/youtube.png"
+			},
+			{
+				"name": "twitter",
+				"icon": "./src/assets/twitter.png"
+			}
+		],
+		"tags": [
+			"Musicals",
+			"Concerts",
+			"Comedy",
+			"Broadway"
+		],
+		"vibe": [
+			"Chill",
+			"Upbeat",
+			"Funny",
+			"Playful"
+		],
 		"upcoming": [
 			{
-				"imgUrl": "./src/data/artists/lea-salonga/lea-upcoming-1.jpg",
+				"imgUrl": "/src/data/artists/lea-salonga/lea-upcoming-1.jpg",
 				"title": "Lea Salonga Live Concert",
 				"location": "Athens, GA",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -26,7 +61,7 @@
 				]
 			},
 			{
-				"imgUrl": "./src/data/artists/lea-salonga/lea-upcoming-2.jpg",
+				"imgUrl": "/src/data/artists/lea-salonga/lea-upcoming-2.jpg",
 				"title": "Lea Salonga Live Concert",
 				"location": "Houston, TX",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -42,7 +77,7 @@
 				]
 			},
 			{
-				"imgUrl": "./src/data/artists/lea-salonga/lea-upcoming-3.jpg",
+				"imgUrl": "/src/data/artists/lea-salonga/lea-upcoming-3.jpg",
 				"title": "Lea Salonga Live Concert",
 				"location": "Dallas, TX",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -58,7 +93,7 @@
 				]
 			},
 			{
-				"imgUrl": "./src/data/artists/lea-salonga/lea-upcoming-4.jpg",
+				"imgUrl": "/src/data/artists/lea-salonga/lea-upcoming-4.jpg",
 				"title": "Lea Salonga Live Concert",
 				"location": "Chicago, IL",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -76,25 +111,25 @@
 		],
 		"known": [
 			{
-				"imgUrl": "./src/data/artists/lea-salonga/lea-known-1.jpg",
+				"imgUrl": "/src/data/artists/lea-salonga/lea-known-1.jpg",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Drury Lane, London",
 				"title": "Tony award winning role in Miss Saigon"
 			},
 			{
-				"imgUrl": "./src/data/artists/lea-salonga/lea-known-2.jpg",
+				"imgUrl": "/src/data/artists/lea-salonga/lea-known-2.jpg",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Manila",
 				"title": "The Story of My Life: Lea Salonga Live"
 			},
 			{
-				"imgUrl": "./src/data/artists/lea-salonga/lea-known-3.jpg",
+				"imgUrl": "/src/data/artists/lea-salonga/lea-known-3.jpg",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Bristol, UK",
 				"title": "Lea Salonga: Stage, Screen & Everything in between"
 			},
 			{
-				"imgUrl": "./src/data/artists/lea-salonga/lea-known-4.jpg",
+				"imgUrl": "/src/data/artists/lea-salonga/lea-known-4.jpg",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Royal Albert Hall, London",
 				"title": "Lea Salonga: Dream Again"
@@ -103,16 +138,51 @@
 	},
 	{
 		"id": 102,
-		"name": "Martin Nievera",
-		"profile": "./src/data/artists/martin-nievera/martin-nievera-profile-1.jpg",
-		"backdrop": "./src/data/artists/martin-nievera/martin-nievera-bg-1.jpg",
+		"title": "Martin Nievera",
+		"profile": "/src/data/artists/martin-nievera/martin-nievera-profile-1.jpg",
+		"imageUrl": "/src/data/artists/martin-nievera/martin-nievera-bg-1.jpg",
 		"about1": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
 		"about2": " Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
 		"about3": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
-		"email": "donaldglover.com",
+		"usefulInfo": [
+			{
+				"title": "donaldglover.com",
+				"icon": "./src/assets/globe.png"
+			}
+		],
+		"socials": [
+			{
+				"name": "facebook",
+				"icon": "./src/assets/facebook.png"
+			},
+			{
+				"name": "instagram",
+				"icon": "./src/assets/instagram.png"
+			},
+			{
+				"name": "youtube",
+				"icon": "./src/assets/youtube.png"
+			},
+			{
+				"name": "twitter",
+				"icon": "./src/assets/twitter.png"
+			}
+		],
+		"tags": [
+			"Musicals",
+			"Concerts",
+			"Comedy",
+			"Broadway"
+		],
+		"vibe": [
+			"Chill",
+			"Upbeat",
+			"Funny",
+			"Playful"
+		],
 		"upcoming": [
 			{
-				"imgUrl": "./src/data/artists/martin-nievera/martin-upcoming-1.jpg",
+				"imgUrl": "/src/data/artists/martin-nievera/martin-upcoming-1.jpg",
 				"title": "Always & Forever",
 				"location": "MOA Arena",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -128,7 +198,7 @@
 				]
 			},
 			{
-				"imgUrl": "./src/data/artists/martin-nievera/martin-upcoming-2.jpg",
+				"imgUrl": "/src/data/artists/martin-nievera/martin-upcoming-2.jpg",
 				"title": "Martin Nievera: The aniiversary concert",
 				"location": "Smart Araneta Coliseum",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -144,7 +214,7 @@
 				]
 			},
 			{
-				"imgUrl": "./src/data/artists/martin-nievera/martin-upcoming-3.jpg",
+				"imgUrl": "/src/data/artists/martin-nievera/martin-upcoming-3.jpg",
 				"title": "Martin Nievera: Live Again",
 				"location": "Solaire Resort, Metro Manila",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -160,7 +230,7 @@
 				]
 			},
 			{
-				"imgUrl": "./src/data/artists/martin-nievera/martin-upcoming-4.jpg",
+				"imgUrl": "/src/data/artists/martin-nievera/martin-upcoming-4.jpg",
 				"title": "Martin Nievera: The journey continues",
 				"location": "BGC, Taguig",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -178,25 +248,25 @@
 		],
 		"known": [
 			{
-				"imgUrl": "./src/data/artists/martin-nievera/martin-known-1.jpg",
+				"imgUrl": "/src/data/artists/martin-nievera/martin-known-1.jpg",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Las Vegas, NV",
 				"title": "Harana: An East Meets West Live Experience"
 			},
 			{
-				"imgUrl": "./src/data/artists/martin-nievera/martin-known-2.jpg",
+				"imgUrl": "/src/data/artists/martin-nievera/martin-known-2.jpg",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Smart Araneta Coliseum",
 				"title": "Martin Nievera: TheKing4ever"
 			},
 			{
-				"imgUrl": "./src/data/artists/martin-nievera/martin-known-3.jpg",
+				"imgUrl": "/src/data/artists/martin-nievera/martin-known-3.jpg",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Uncasville, Connecticut, US",
 				"title": "As 1"
 			},
 			{
-				"imgUrl": "./src/data/artists/martin-nievera/martin-known-4.jpg",
+				"imgUrl": "/src/data/artists/martin-nievera/martin-known-4.jpg",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Memphis, Tennessee, US",
 				"title": "Martin Nievera Live Concert"
@@ -205,16 +275,51 @@
 	},
 	{
 		"id": 103,
-		"name": "Sarah Geronimo",
-		"profile": "./src/data/artists/sarah-geronimo/sarah-geronimo-profile-1.jpg",
-		"backdrop": "./src/data/artists/sarah-geronimo/sarah-geronimo-bg-1.jpg",
+		"title": "Sarah Geronimo",
+		"profile": "/src/data/artists/sarah-geronimo/sarah-geronimo-profile-1.jpg",
+		"imageUrl": "/src/data/artists/sarah-geronimo/sarah-geronimo-bg-1.jpg",
 		"about1": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
 		"about2": " Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
 		"about3": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
-		"email": "donaldglover.com",
+		"usefulInfo": [
+			{
+				"title": "donaldglover.com",
+				"icon": "./src/assets/globe.png"
+			}
+		],
+		"socials": [
+			{
+				"name": "facebook",
+				"icon": "./src/assets/facebook.png"
+			},
+			{
+				"name": "instagram",
+				"icon": "./src/assets/instagram.png"
+			},
+			{
+				"name": "youtube",
+				"icon": "./src/assets/youtube.png"
+			},
+			{
+				"name": "twitter",
+				"icon": "./src/assets/twitter.png"
+			}
+		],
+		"tags": [
+			"Musicals",
+			"Concerts",
+			"Comedy",
+			"Broadway"
+		],
+		"vibe": [
+			"Chill",
+			"Upbeat",
+			"Funny",
+			"Playful"
+		],
 		"upcoming": [
 			{
-				"imgUrl": "./src/data/artists/sarah-geronimo/sarah-upcoming-1.jpg",
+				"imgUrl": "/src/data/artists/sarah-geronimo/sarah-upcoming-1.jpg",
 				"title": "Sarah G Bamboo",
 				"location": "Hawaii Convention Center",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -230,7 +335,7 @@
 				]
 			},
 			{
-				"imgUrl": "./src/data/artists/sarah-geronimo/sarah-upcoming-2.jpg",
+				"imgUrl": "/src/data/artists/sarah-geronimo/sarah-upcoming-2.jpg",
 				"title": "Sarah G: TALA",
 				"location": "Online",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -246,7 +351,7 @@
 				]
 			},
 			{
-				"imgUrl": "./src/data/artists/sarah-geronimo/sarah-upcoming-3.jpg",
+				"imgUrl": "/src/data/artists/sarah-geronimo/sarah-upcoming-3.jpg",
 				"title": "Sarah G: A night with champion",
 				"location": "Greenleaf Hotel, Gensan",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -262,7 +367,7 @@
 				]
 			},
 			{
-				"imgUrl": "./src/data/artists/sarah-geronimo/sarah-upcoming-4.jpg",
+				"imgUrl": "/src/data/artists/sarah-geronimo/sarah-upcoming-4.jpg",
 				"title": "Lanterns and Legends",
 				"location": "Okada, Manila",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -280,25 +385,25 @@
 		],
 		"known": [
 			{
-				"imgUrl": "./src/data/artists/sarah-geronimo/sarah-known-1.jpg",
+				"imgUrl": "/src/data/artists/sarah-geronimo/sarah-known-1.jpg",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Pasay, NCR, Philippines",
 				"title": "Acer Day 2023 #AceYourWorld"
 			},
 			{
-				"imgUrl": "./src/data/artists/sarah-geronimo/sarah-known-2.jpg",
+				"imgUrl": "/src/data/artists/sarah-geronimo/sarah-known-2.jpg",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Quezon City, Philippines",
 				"title": "Sarah Geronimo: The 20th Anniversary"
 			},
 			{
-				"imgUrl": "./src/data/artists/sarah-geronimo/sarah-known-3.jpg",
+				"imgUrl": "/src/data/artists/sarah-geronimo/sarah-known-3.jpg",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Quezon City, Philippines",
 				"title": "MYX, MAMA and MTV Europe - award winning singer"
 			},
 			{
-				"imgUrl": "./src/data/artists/sarah-geronimo/sarah-known-4.jpg",
+				"imgUrl": "/src/data/artists/sarah-geronimo/sarah-known-4.jpg",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Cubao, Philippines",
 				"title": "Perfect 10"
@@ -307,16 +412,51 @@
 	},
 	{
 		"id": 104,
-		"name": "Bruno Mars",
-		"profile": "./src/data/artists/bruno-mars/bruno-mars-profile-1.jpg",
-		"backdrop": "./src/data/artists/bruno-mars/bruno-mars-bg-1.jpg",
+		"title": "Bruno Mars",
+		"profile": "/src/data/artists/bruno-mars/bruno-mars-profile-1.jpg",
+		"imageUrl": "/src/data/artists/bruno-mars/bruno-mars-bg-1.jpg",
 		"about1": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
 		"about2": " Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
 		"about3": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
-		"email": "donaldglover.com",
+		"usefulInfo": [
+			{
+				"title": "donaldglover.com",
+				"icon": "./src/assets/globe.png"
+			}
+		],
+		"socials": [
+			{
+				"name": "facebook",
+				"icon": "./src/assets/facebook.png"
+			},
+			{
+				"name": "instagram",
+				"icon": "./src/assets/instagram.png"
+			},
+			{
+				"name": "youtube",
+				"icon": "./src/assets/youtube.png"
+			},
+			{
+				"name": "twitter",
+				"icon": "./src/assets/twitter.png"
+			}
+		],
+		"tags": [
+			"Musicals",
+			"Concerts",
+			"Comedy",
+			"Broadway"
+		],
+		"vibe": [
+			"Chill",
+			"Upbeat",
+			"Funny",
+			"Playful"
+		],
 		"upcoming": [
 			{
-				"imgUrl": "./src/data/artists/bruno-mars/bruno-mars-1.jpg",
+				"imgUrl": "/src/data/artists/bruno-mars/bruno-mars-1.jpg",
 				"title": "Dolby Live",
 				"location": "Las Vegas, NV",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -332,7 +472,7 @@
 				]
 			},
 			{
-				"imgUrl": "./src/data/artists/lea-salonga/bruno-upcoming-2.jpg",
+				"imgUrl": "/src/data/artists/lea-salonga/bruno-upcoming-2.jpg",
 				"title": "Dolby Live",
 				"location": "Las Vegas, NV",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -348,7 +488,7 @@
 				]
 			},
 			{
-				"imgUrl": "./src/data/artists/lea-salonga/bruno-upcoming-3.jpg",
+				"imgUrl": "/src/data/artists/lea-salonga/bruno-upcoming-3.jpg",
 				"title": "Dolby Live",
 				"location": "Las Vegas, NV",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -364,7 +504,7 @@
 				]
 			},
 			{
-				"imgUrl": "./src/data/artists/lea-salonga/bruno-upcoming-4.jpg",
+				"imgUrl": "/src/data/artists/lea-salonga/bruno-upcoming-4.jpg",
 				"title": "Dolby Live",
 				"location": "Las Vegas, NV",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -382,25 +522,25 @@
 		],
 		"known": [
 			{
-				"imgUrl": "./src/data/artists/bruno-mars/bruno-known-1.jpg",
+				"imgUrl": "/src/data/artists/bruno-mars/bruno-known-1.jpg",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Tokyo Japan, Manila, Dallas TX, etc. ",
 				"title": "24k magic world tour"
 			},
 			{
-				"imgUrl": "./src/data/artists/bruno-mars/bruno-known-2.jpg",
+				"imgUrl": "/src/data/artists/bruno-mars/bruno-known-2.jpg",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Los Angeles, California",
 				"title": "Multiple Grammy-award winning singer"
 			},
 			{
-				"imgUrl": "./src/data/artists/bruno-mars/bruno-known-3.jpg",
+				"imgUrl": "/src/data/artists/bruno-mars/bruno-known-3.jpg",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "London",
 				"title": "British summer time - Bruno Mars"
 			},
 			{
-				"imgUrl": "./src/data/artists/bruno-mars/bruno-known-4.jpg",
+				"imgUrl": "/src/data/artists/bruno-mars/bruno-known-4.jpg",
 				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Los Angeles, California",
 				"title": "Microsoft Theater, L.A. Live"
