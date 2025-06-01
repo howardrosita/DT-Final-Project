@@ -7,6 +7,7 @@ import LocationPin from "../../assets/images/pin-icon.png";
 import { HeroText } from "../NavbarHero/HeroText";
 import AboutEvent from "../AboutEvents";
 import { MoreLikeCard } from "../MoreLikeThis/MoreLikeCard";
+import Footer from "../Footer/Footer";
 //dito i cocompile mga component
 const PageContents = ({ event }) => {
   return (
@@ -49,6 +50,7 @@ export const EventInfo = () => {
         <NavBackground event={eventData} /> {/* background ng page */}
         <NavBar event={eventData} /> {/* navbar na sticky */}
         <PageContents event={eventData} />
+        <Footer />
       </div>
     </>
   );
