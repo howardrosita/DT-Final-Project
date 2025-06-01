@@ -1,8 +1,8 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { ImagePortion } from "./ImagePortion";
-import hamil from "../../assets/images/Hamilton.png";
+// import hamil from "../../assets/images/Hamilton.png";
 import black from "../../assets/images/BlackWall.png";
-import burger from "../../assets/images/Burger.png";
+// import burger from "../../assets/images/Burger.png";
 import { MoreCardDetails } from "./MoreCardDetails";
 import eventData from "../../data/events.json";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,11 +12,11 @@ import "swiper/css/pagination";
 
 import { Navigation, Pagination } from "swiper/modules";
 
-export const HamiltonImage = ({ className }) => {
-  return (
-    <img src={hamil} alt="Hamilton For More Like This" className={className} />
-  );
-};
+// export const HamiltonImage = ({ className }) => {
+//   return (
+//     <img src={hamil} alt="Hamilton For More Like This" className={className} />
+//   );
+// };
 
 export const MoreLikeCard = () => {
   const [likedCards, setLikedCards] = useState({});
@@ -96,18 +96,18 @@ export const MoreLikeCard = () => {
   //     admission2: "Standard",
   //   },
   // ];
-  const hamilStyle = {
-    backgroundImage: `url(${hamil})`,
-    backgroundSize: "contain",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    alignItems: "center",
-    height: "58vh", // full viewport height
-    width: "100vw", // full viewport width
-    display: "block",
-    // rotate the div
-    // position: "relative", // needed for absolute positioning of inner h1
-  };
+  // const hamilStyle = {
+  //   backgroundImage: `url(${hamil})`,
+  //   backgroundSize: "contain",
+  //   backgroundPosition: "center",
+  //   backgroundRepeat: "no-repeat",
+  //   alignItems: "center",
+  //   height: "58vh", // full viewport height
+  //   width: "100vw", // full viewport width
+  //   display: "block",
+  //   // rotate the div
+  //   // position: "relative", // needed for absolute positioning of inner h1
+  // };
 
   const divStyle = {
     backgroundImage: `url(${black})`,
@@ -308,46 +308,49 @@ export const MoreLikeCard = () => {
   };
 
   return (
-    <Swiper
-      modules={[Navigation, Pagination]}
-      spaceBetween={-590}
-      slidesPerView={-1}
-      navigation
-      pagination={{ clickable: true }}
-      breakpoints={{
-        640: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-      }}
-    >
-      {cards.map((card) => (
-        <SwiperSlide key={card.id}>
-          <div style={cardContainerStyle}>
-            <div style={boxStyle(card.imageUrl)}>
-              <div style={heartContainerStyle}>
-                <span
-                  onClick={() => toggleLike(card.id)}
-                  style={{ fontSize: 24, cursor: "pointer" }}
-                >
-                  {likedCards[card.id] ? "❤️" : "🤍"}
-                </span>
+    <>
+      <h2>More Like This</h2>
+      <Swiper
+        modules={[Navigation, Pagination]}
+        spaceBetween={-250}
+        slidesPerView={-1}
+        navigation
+        pagination={{ clickable: true }}
+        breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+      >
+        {cards.map((card) => (
+          <SwiperSlide key={card.id}>
+            <div style={cardContainerStyle}>
+              <div style={boxStyle(card.imageUrl)}>
+                <div style={heartContainerStyle}>
+                  <span
+                    onClick={() => toggleLike(card.id)}
+                    style={{ fontSize: 24, cursor: "pointer" }}
+                  >
+                    {likedCards[card.id] ? "❤️" : "🤍"}
+                  </span>
+                </div>
+              </div>
+              <div style={boxStyle2(black)}>
+                <MoreCardDetails
+                  title={card.title}
+                  city={card.city}
+                  comment={card.comment}
+                  advertisement={card.advertisement}
+                  price1={card.price1}
+                  price2={card.price2}
+                  admission1={card.admission1}
+                  admission2={card.admission2}
+                />
               </div>
             </div>
-            <div style={boxStyle2(black)}>
-              <MoreCardDetails
-                title={card.title}
-                city={card.city}
-                comment={card.comment}
-                advertisement={card.advertisement}
-                price1={card.price1}
-                price2={card.price2}
-                admission1={card.admission1}
-                admission2={card.admission2}
-              />
-            </div>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
   );
 };
