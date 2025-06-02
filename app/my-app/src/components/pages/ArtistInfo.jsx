@@ -4,6 +4,8 @@ import { useParams } from 'react-router-dom';
 import NavBackground from '../NavbarHero/NavBackground';
 import { HeroText } from '../NavbarHero/HeroText';
 import NavBar from '../NavbarHero/NavBar';
+import AboutEvent from '../AboutEvents';
+import { MoreLikeCard } from '../MoreLikeThis/MoreLikeCard';
 
 const PageContents = ({ event }) => {
   return (
@@ -20,6 +22,9 @@ const PageContents = ({ event }) => {
       }}
     >
       <HeroText event={event} type="artist" />
+      <AboutEvent />
+      <MoreLikeCard event={event.upcoming} type="upcoming" />
+      <MoreLikeCard event={event.known} type="known" />
     </div>
   );
 };

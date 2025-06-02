@@ -45,10 +45,11 @@
 		],
 		"upcoming": [
 			{
+				"id": 111,
 				"imgUrl": "/src/data/artists/lea-salonga/lea-upcoming-1.jpg",
 				"title": "Lea Salonga Live Concert",
 				"location": "Athens, GA",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"prices": [
 					{
 						"type": "Member",
@@ -61,10 +62,11 @@
 				]
 			},
 			{
+				"id": 112,
 				"imgUrl": "/src/data/artists/lea-salonga/lea-upcoming-2.jpg",
 				"title": "Lea Salonga Live Concert",
 				"location": "Houston, TX",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"prices": [
 					{
 						"type": "Member",
@@ -77,10 +79,11 @@
 				]
 			},
 			{
+				"id": 113,
 				"imgUrl": "/src/data/artists/lea-salonga/lea-upcoming-3.jpg",
 				"title": "Lea Salonga Live Concert",
 				"location": "Dallas, TX",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"prices": [
 					{
 						"type": "Member",
@@ -93,10 +96,11 @@
 				]
 			},
 			{
+				"id": 114,
 				"imgUrl": "/src/data/artists/lea-salonga/lea-upcoming-4.jpg",
 				"title": "Lea Salonga Live Concert",
 				"location": "Chicago, IL",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"prices": [
 					{
 						"type": "Member",
@@ -111,26 +115,30 @@
 		],
 		"known": [
 			{
+				"id": 115,
 				"imgUrl": "/src/data/artists/lea-salonga/lea-known-1.jpg",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Drury Lane, London",
 				"title": "Tony award winning role in Miss Saigon"
 			},
 			{
+				"id": 116,
 				"imgUrl": "/src/data/artists/lea-salonga/lea-known-2.jpg",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Manila",
 				"title": "The Story of My Life: Lea Salonga Live"
 			},
 			{
+				"id": 117,
 				"imgUrl": "/src/data/artists/lea-salonga/lea-known-3.jpg",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Bristol, UK",
 				"title": "Lea Salonga: Stage, Screen & Everything in between"
 			},
 			{
+				"id": 118,
 				"imgUrl": "/src/data/artists/lea-salonga/lea-known-4.jpg",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Royal Albert Hall, London",
 				"title": "Lea Salonga: Dream Again"
 			}
@@ -182,10 +190,11 @@
 		],
 		"upcoming": [
 			{
+				"id": 111,
 				"imgUrl": "/src/data/artists/martin-nievera/martin-upcoming-1.jpg",
 				"title": "Always & Forever",
 				"location": "MOA Arena",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"prices": [
 					{
 						"type": "Member",
@@ -198,10 +207,11 @@
 				]
 			},
 			{
+				"id": 112,
 				"imgUrl": "/src/data/artists/martin-nievera/martin-upcoming-2.jpg",
 				"title": "Martin Nievera: The aniiversary concert",
 				"location": "Smart Araneta Coliseum",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"prices": [
 					{
 						"type": "Member",
@@ -214,10 +224,11 @@
 				]
 			},
 			{
+				"id": 113,
 				"imgUrl": "/src/data/artists/martin-nievera/martin-upcoming-3.jpg",
 				"title": "Martin Nievera: Live Again",
 				"location": "Solaire Resort, Metro Manila",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"prices": [
 					{
 						"type": "Member",
@@ -230,10 +241,11 @@
 				]
 			},
 			{
+				"id": 114,
 				"imgUrl": "/src/data/artists/martin-nievera/martin-upcoming-4.jpg",
 				"title": "Martin Nievera: The journey continues",
 				"location": "BGC, Taguig",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"prices": [
 					{
 						"type": "Member",
@@ -248,26 +260,30 @@
 		],
 		"known": [
 			{
+				"id": 115,
 				"imgUrl": "/src/data/artists/martin-nievera/martin-known-1.jpg",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Las Vegas, NV",
 				"title": "Harana: An East Meets West Live Experience"
 			},
 			{
+				"id": 116,
 				"imgUrl": "/src/data/artists/martin-nievera/martin-known-2.jpg",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Smart Araneta Coliseum",
 				"title": "Martin Nievera: TheKing4ever"
 			},
 			{
+				"id": 117,
 				"imgUrl": "/src/data/artists/martin-nievera/martin-known-3.jpg",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Uncasville, Connecticut, US",
 				"title": "As 1"
 			},
 			{
+				"id": 118,
 				"imgUrl": "/src/data/artists/martin-nievera/martin-known-4.jpg",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Memphis, Tennessee, US",
 				"title": "Martin Nievera Live Concert"
 			}
@@ -319,10 +335,11 @@
 		],
 		"upcoming": [
 			{
+				"id": 111,
 				"imgUrl": "/src/data/artists/sarah-geronimo/sarah-upcoming-1.jpg",
 				"title": "Sarah G Bamboo",
 				"location": "Hawaii Convention Center",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"prices": [
 					{
 						"type": "Member",
@@ -335,10 +352,11 @@
 				]
 			},
 			{
+				"id": 112,
 				"imgUrl": "/src/data/artists/sarah-geronimo/sarah-upcoming-2.jpg",
 				"title": "Sarah G: TALA",
 				"location": "Online",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"prices": [
 					{
 						"type": "Member",
@@ -351,10 +369,11 @@
 				]
 			},
 			{
+				"id": 113,
 				"imgUrl": "/src/data/artists/sarah-geronimo/sarah-upcoming-3.jpg",
 				"title": "Sarah G: A night with champion",
 				"location": "Greenleaf Hotel, Gensan",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"prices": [
 					{
 						"type": "Member",
@@ -367,10 +386,11 @@
 				]
 			},
 			{
+				"id": 114,
 				"imgUrl": "/src/data/artists/sarah-geronimo/sarah-upcoming-4.jpg",
 				"title": "Lanterns and Legends",
 				"location": "Okada, Manila",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"prices": [
 					{
 						"type": "Member",
@@ -385,26 +405,30 @@
 		],
 		"known": [
 			{
+				"id": 115,
 				"imgUrl": "/src/data/artists/sarah-geronimo/sarah-known-1.jpg",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Pasay, NCR, Philippines",
 				"title": "Acer Day 2023 #AceYourWorld"
 			},
 			{
+				"id": 116,
 				"imgUrl": "/src/data/artists/sarah-geronimo/sarah-known-2.jpg",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Quezon City, Philippines",
 				"title": "Sarah Geronimo: The 20th Anniversary"
 			},
 			{
+				"id": 117,
 				"imgUrl": "/src/data/artists/sarah-geronimo/sarah-known-3.jpg",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Quezon City, Philippines",
 				"title": "MYX, MAMA and MTV Europe - award winning singer"
 			},
 			{
+				"id": 118,
 				"imgUrl": "/src/data/artists/sarah-geronimo/sarah-known-4.jpg",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Cubao, Philippines",
 				"title": "Perfect 10"
 			}
@@ -456,10 +480,11 @@
 		],
 		"upcoming": [
 			{
-				"imgUrl": "/src/data/artists/bruno-mars/bruno-mars-1.jpg",
+				"id": 111,
+				"imgUrl": "/src/data/artists/bruno-mars/bruno-upcoming-1.jpg",
 				"title": "Dolby Live",
 				"location": "Las Vegas, NV",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"prices": [
 					{
 						"type": "Member",
@@ -472,10 +497,11 @@
 				]
 			},
 			{
-				"imgUrl": "/src/data/artists/lea-salonga/bruno-upcoming-2.jpg",
+				"id": 112,
+				"imgUrl": "/src/data/artists/bruno-mars/bruno-upcoming-2.jpg",
 				"title": "Dolby Live",
 				"location": "Las Vegas, NV",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"prices": [
 					{
 						"type": "Member",
@@ -488,10 +514,11 @@
 				]
 			},
 			{
-				"imgUrl": "/src/data/artists/lea-salonga/bruno-upcoming-3.jpg",
+				"id": 113,
+				"imgUrl": "/src/data/artists/bruno-mars/bruno-upcoming-3.jpg",
 				"title": "Dolby Live",
 				"location": "Las Vegas, NV",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"prices": [
 					{
 						"type": "Member",
@@ -504,10 +531,11 @@
 				]
 			},
 			{
-				"imgUrl": "/src/data/artists/lea-salonga/bruno-upcoming-4.jpg",
+				"id": 114,
+				"imgUrl": "/src/data/artists/bruno-mars/bruno-upcoming-4.jpg",
 				"title": "Dolby Live",
 				"location": "Las Vegas, NV",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"prices": [
 					{
 						"type": "Member",
@@ -522,26 +550,30 @@
 		],
 		"known": [
 			{
+				"id": 115,
 				"imgUrl": "/src/data/artists/bruno-mars/bruno-known-1.jpg",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Tokyo Japan, Manila, Dallas TX, etc. ",
 				"title": "24k magic world tour"
 			},
 			{
+				"id": 116,
 				"imgUrl": "/src/data/artists/bruno-mars/bruno-known-2.jpg",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Los Angeles, California",
 				"title": "Multiple Grammy-award winning singer"
 			},
 			{
+				"id": 117,
 				"imgUrl": "/src/data/artists/bruno-mars/bruno-known-3.jpg",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "London",
 				"title": "British summer time - Bruno Mars"
 			},
 			{
+				"id": 118,
 				"imgUrl": "/src/data/artists/bruno-mars/bruno-known-4.jpg",
-				"details": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+				"description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
 				"location": "Los Angeles, California",
 				"title": "Microsoft Theater, L.A. Live"
 			}

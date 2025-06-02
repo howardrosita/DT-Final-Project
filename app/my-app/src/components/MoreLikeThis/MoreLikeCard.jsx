@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { Navigation, Pagination } from "swiper/modules";
+import Arrows from "./Arrows";
 
 // export const HamiltonImage = ({ className }) => {
 //   return (
@@ -18,7 +19,7 @@ import { Navigation, Pagination } from "swiper/modules";
 //   );
 // };
 
-export const MoreLikeCard = () => {
+export const MoreLikeCard = ({ event, type }) => {
   const [likedCards, setLikedCards] = useState({});
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -28,16 +29,16 @@ export const MoreLikeCard = () => {
       [id]: !prev[id],
     }));
   };
-  const cards = eventData[0].more.map((event) => ({
+  const cards = event && event.map((event) => ({
     id: event.id,
     title: event.title,
     city: event.location,
     comment: event.description,
     advertisement: "Get tickets starting at",
-    price1: event.prices[0]?.price,
-    price2: event.prices[1]?.price,
-    admission1: event.prices[0]?.type,
-    admission2: event.prices[1]?.type,
+    price1: event.prices && event.prices[0]?.price,
+    price2: event.prices && event.prices[1]?.price,
+    admission1: event.prices && event.prices[0]?.type,
+    admission2: event.prices && event.prices[1]?.type,
     imageUrl: event.imgUrl,
   }));
 
@@ -309,7 +310,20 @@ export const MoreLikeCard = () => {
 
   return (
     <>
-      <h2>More Like This</h2>
+      {type === "more" &&
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <h2>More Like This</h2>
+        </div>}
+      {type === "upcoming" &&
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <h2>Upcoming events</h2>
+          <Arrows />
+        </div>}
+      {type === "known" &&
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <h2>Known for</h2>
+          <Arrows />
+        </div>}
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={-250}
@@ -322,7 +336,7 @@ export const MoreLikeCard = () => {
           1024: { slidesPerView: 3 },
         }}
       >
-        {cards.map((card) => (
+        {cards && cards.map((card) => (
           <SwiperSlide key={card.id}>
             <div style={cardContainerStyle}>
               <div style={boxStyle(card.imageUrl)}>
