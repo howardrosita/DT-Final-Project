@@ -23,9 +23,10 @@ const AboutPage = ({ event, type }) => {
       }
     }
   }, [event]);
+
   return (
     <>
-      {eventDetails && eventDetails.length > 0 ? (
+      {eventDetails && eventDetails.length > 0 && (
         <div className="about_event_container">
           {type === "aboutEvent" &&
             eventDetails.map((event) => (
@@ -88,7 +89,8 @@ const AboutPage = ({ event, type }) => {
                   </Card>
                 </div>
               </React.Fragment>
-            ))}{" "}
+            ))}
+
           {type === "aboutArtist" &&
             eventDetails.map((artist) => (
               <React.Fragment key={`artist-${artist.id}-${artist.title}`}>
@@ -97,8 +99,8 @@ const AboutPage = ({ event, type }) => {
                   <div className="header">
                     <h2>About {artist.title}</h2>
                     <p>{artist.about1}</p>
-                    {artist.about2 && <p>{artist.about2}</p>}
-                    {artist.about3 && <p>{artist.about3}</p>}
+                    <p>{artist.about2}</p>
+                    <p>{artist.about3}</p>
                   </div>
 
                   <Tags tags={artist.tags} />
@@ -132,7 +134,7 @@ const AboutPage = ({ event, type }) => {
 
                     {/* Card action */}
                     <CardActions>
-                      <button>View Events</button>
+                      <button>Follow</button>
                     </CardActions>
                   </Card>
 
@@ -161,15 +163,7 @@ const AboutPage = ({ event, type }) => {
                   </Card>
                 </div>
               </React.Fragment>
-            ))}{" "}
-        </div>
-      ) : (
-        <div className="loading">
-          {event === undefined || event === null ? (
-            <h2>Loading event details...</h2>
-          ) : (
-            <h2>No event details available.</h2>
-          )}
+            ))}
         </div>
       )}
     </>
