@@ -1,6 +1,10 @@
 import React, { useCallback, useEffect, useState } from "react";
 import logo from "../../assets/images/logo.png";
 import ticket from "../../assets/images/ticket-icon.svg";
+import leftArrow from "../../assets/images/left-arrow.png";
+import GalleryIcon from "../../assets/images/gallery-icon.png";
+import ShareIcon from "../../assets/images/share-icon.png";
+import HeartIcon from "../../assets/images/heart-icon-mobile.png";
 import NavMenu from "./NavMenu";
 
 const NavBar = () => {
@@ -43,6 +47,24 @@ const NavBar = () => {
               <p style={{ color: "white" }}>Events</p>
             </div>
             <NavMenu />
+          </div>
+          <div className="mobileNavIcon">
+            <div className="arrow-icon">
+              <a href="#">
+                <img src={leftArrow} alt="left-arrow"></img>
+              </a>
+            </div>
+            <div className="mobileNav">
+              <a href="#">
+                <img src={GalleryIcon} alt="left-arrow"></img>
+              </a>
+              <a href="#">
+                <img src={ShareIcon} alt="share-icon"></img>
+              </a>
+              <a href="#">
+                <img src={HeartIcon} alt="heart-icon"></img>
+              </a>
+            </div>
           </div>
         </div>
       </nav>

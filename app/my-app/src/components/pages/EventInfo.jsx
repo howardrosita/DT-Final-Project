@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 import { getEvents } from "../../services/events.service";
 import NavBackground from "../NavbarHero/NavBackground";
 import NavBar from "../NavbarHero/NavBar";
-import Artists from "../Artists/Artists";
-import LocationPin from "../../assets/images/pin-icon.png";
 import { HeroText } from "../NavbarHero/HeroText";
 import { MoreLikeCard } from "../MoreLikeThis/MoreLikeCard";
 import Footer from "../Footer/Footer";
