@@ -1,12 +1,14 @@
 const Card = ({
   children,
   styles,
+  className,
 }: {
   children: React.ReactNode;
   styles?: React.CSSProperties;
+  className?: string;
 }) => {
   return (
-    <div className="card" style={styles}>
+    <div className={`card ${className ? className : ""}`} style={styles}>
       {children}
     </div>
   );

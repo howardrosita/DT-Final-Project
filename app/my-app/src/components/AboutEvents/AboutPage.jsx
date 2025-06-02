@@ -6,6 +6,7 @@ import SimilarShows from "./components/SimilarShows";
 import Tags from "./components/Tags";
 import UsefulInfo from "./components/UsefulInfo";
 import SocialInfo from "./components/SocialInfo";
+import Drawer from "./components/drawer";
 
 const AboutPage = ({ event, type }) => {
   const [eventDetails, setEventDetails] = useState([]);
@@ -38,21 +39,12 @@ const AboutPage = ({ event, type }) => {
                   <SimilarShows similarEvents={event.similar} />
                   <Artists artists={event.artists} />
                 </div>
-
-                {/* Right component similar to sidebar */}
-                <div className="about_event_right">
+                {/* Right component sidebar */}
+                <div className="hidden about_event_right">
                   {/* Price range card */}
-                  <Card
-                    styles={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    {/* Card content */}
-                    <CardContent>
-                      <CardHeader title="Price Range" subtitle={event.price} />
-                    </CardContent>
+                  <Card className="price_range_card">
+                    {/* Card Header */}
+                    <CardHeader title="Price Range" subtitle={event.price} />
 
                     {/* Card action */}
                     <CardActions>
@@ -61,14 +53,7 @@ const AboutPage = ({ event, type }) => {
                   </Card>
 
                   {/* Useful info card */}
-                  <Card
-                    styles={{
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "space-between",
-                      alignItems: "flex-start",
-                    }}
-                  >
+                  <Card className="useful_info_card">
                     {/* Card Content */}
                     <CardContent>
                       {/* Header card */}
@@ -84,6 +69,8 @@ const AboutPage = ({ event, type }) => {
                     </CardActions>
                   </Card>
                 </div>
+
+                <Drawer event={event} type={type} />
               </React.Fragment>
             ))}
 
@@ -158,6 +145,8 @@ const AboutPage = ({ event, type }) => {
                     </CardActions>
                   </Card>
                 </div>
+
+                <Drawer event={event} type={type} />
               </React.Fragment>
             ))}
         </div>
