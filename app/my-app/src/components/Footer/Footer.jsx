@@ -51,7 +51,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <p style={{ flex: "0 0 500px" }}>© Red Curtain Addict 2021</p>
+        <p style={{ flex: "0 0 auto" }}>© Red Curtain Addict 2021</p>
       </div>
     </footer>
   );

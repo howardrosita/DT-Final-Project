@@ -5,12 +5,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<EventInfo />} />
-        <Route path="/artist/:id" element={<ArtistInfo />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<EventInfo />} />
+          <Route path="/artist/:id" element={<ArtistInfo />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
