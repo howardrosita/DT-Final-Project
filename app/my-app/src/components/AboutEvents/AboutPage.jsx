@@ -1,15 +1,11 @@
-import "../AboutEvents/styles.css";
+import "./styles.css";
 import React, { useEffect, useState } from "react";
 import Artists from "../Artists/Artists";
-import Card, {
-  CardActions,
-  CardContent,
-  CardHeader,
-} from "../AboutEvents/components/card";
-import SimilarShows from "../AboutEvents/components/SimilarShows";
-import Tags from "../AboutEvents/components/Tags";
-import UsefulInfo from "../AboutEvents/components/UsefulInfo";
-import SocialInfo from "../AboutEvents/components/SocialInfo";
+import Card, { CardActions, CardContent, CardHeader } from "./components/card";
+import SimilarShows from "./components/SimilarShows";
+import Tags from "./components/Tags";
+import UsefulInfo from "./components/UsefulInfo";
+import SocialInfo from "./components/SocialInfo";
 
 const AboutPage = ({ event, type }) => {
   const [eventDetails, setEventDetails] = useState([]);

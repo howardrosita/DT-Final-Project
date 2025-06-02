@@ -5,7 +5,7 @@ import NavBackground from "../NavbarHero/NavBackground";
 import { HeroText } from "../NavbarHero/HeroText";
 import NavBar from "../NavbarHero/NavBar";
 import { MoreLikeCard } from "../MoreLikeThis/MoreLikeCard";
-import AboutPage from "./AboutPage";
+import AboutPage from "../AboutEvents/AboutPage";
 
 const PageContents = ({ event }) => {
   return (
