@@ -28,7 +28,7 @@ const PageContents = ({ event }) => {
       <AboutEvent />
       {/* <Artists artists={event.artists} /> */}
       {/* <MoreSection /> */}
-      <MoreLikeCard />
+      <MoreLikeCard event={event.more} type="more" />
       {/* <Footer /> */}
     </div>
   );
