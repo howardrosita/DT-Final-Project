@@ -1,15 +1,11 @@
-import "../AboutEvents/styles.css";
+import "./styles.css";
 import React, { useEffect, useState } from "react";
 import Artists from "../Artists/Artists";
-import Card, {
-  CardActions,
-  CardContent,
-  CardHeader,
-} from "../AboutEvents/components/card";
-import SimilarShows from "../AboutEvents/components/SimilarShows";
-import Tags from "../AboutEvents/components/Tags";
-import UsefulInfo from "../AboutEvents/components/UsefulInfo";
-import SocialInfo from "../AboutEvents/components/SocialInfo";
+import Card, { CardActions, CardContent, CardHeader } from "./components/card";
+import SimilarShows from "./components/SimilarShows";
+import Tags from "./components/Tags";
+import UsefulInfo from "./components/UsefulInfo";
+import SocialInfo from "./components/SocialInfo";
 
 const AboutPage = ({ event, type }) => {
   const [eventDetails, setEventDetails] = useState([]);
@@ -23,9 +19,10 @@ const AboutPage = ({ event, type }) => {
       }
     }
   }, [event]);
+
   return (
     <>
-      {eventDetails && eventDetails.length > 0 ? (
+      {eventDetails && eventDetails.length > 0 && (
         <div className="about_event_container">
           {type === "aboutEvent" &&
             eventDetails.map((event) => (
@@ -88,7 +85,8 @@ const AboutPage = ({ event, type }) => {
                   </Card>
                 </div>
               </React.Fragment>
-            ))}{" "}
+            ))}
+
           {type === "aboutArtist" &&
             eventDetails.map((artist) => (
               <React.Fragment key={`artist-${artist.id}-${artist.title}`}>
@@ -97,8 +95,8 @@ const AboutPage = ({ event, type }) => {
                   <div className="header">
                     <h2>About {artist.title}</h2>
                     <p>{artist.about1}</p>
-                    {artist.about2 && <p>{artist.about2}</p>}
-                    {artist.about3 && <p>{artist.about3}</p>}
+                    <p>{artist.about2}</p>
+                    <p>{artist.about3}</p>
                   </div>
 
                   <Tags tags={artist.tags} />
@@ -132,7 +130,7 @@ const AboutPage = ({ event, type }) => {
 
                     {/* Card action */}
                     <CardActions>
-                      <button>View Events</button>
+                      <button>Follow</button>
                     </CardActions>
                   </Card>
 
@@ -161,15 +159,7 @@ const AboutPage = ({ event, type }) => {
                   </Card>
                 </div>
               </React.Fragment>
-            ))}{" "}
-        </div>
-      ) : (
-        <div className="loading">
-          {event === undefined || event === null ? (
-            <h2>Loading event details...</h2>
-          ) : (
-            <h2>No event details available.</h2>
-          )}
+            ))}
         </div>
       )}
     </>

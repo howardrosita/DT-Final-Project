@@ -7,7 +7,7 @@ import LocationPin from "../../assets/images/pin-icon.png";
 import { HeroText } from "../NavbarHero/HeroText";
 import { MoreLikeCard } from "../MoreLikeThis/MoreLikeCard";
 import Footer from "../Footer/Footer";
-import AboutPage from "./AboutPage";
+import AboutPage from "../AboutEvents/AboutPage";
 //dito i cocompile mga component
 const PageContents = ({ event }) => {
   return (

@@ -196,8 +196,8 @@ nav {
   max-width: 691px;
   height: 180px;
   display: grid;
-  grid-template-columns: repeat(4, 157px);
-  grid-template-rows: repeat(1, 157px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   gap: 20px;
   overflow: hidden;
 
@@ -311,4 +311,14 @@ nav {
   height: 24px;
 
   padding: 12px;
+}
+
+/* Media Query for small devices */
+
+@media (width <= 768px) {
+  .artist-list {
+    max-width: 100%;
+    height: fit-content;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
