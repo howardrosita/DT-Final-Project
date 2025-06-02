@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react'
-import { getArtistInfo } from '../../services/artists.service';
-import { useParams } from 'react-router-dom';
-import NavBackground from '../NavbarHero/NavBackground';
-import { HeroText } from '../NavbarHero/HeroText';
-import NavBar from '../NavbarHero/NavBar';
-import AboutEvent from '../AboutEvents';
-import { MoreLikeCard } from '../MoreLikeThis/MoreLikeCard';
+import { useState, useEffect } from "react";
+import { getArtistInfo } from "../../services/artists.service";
+import { useParams } from "react-router-dom";
+import NavBackground from "../NavbarHero/NavBackground";
+import { HeroText } from "../NavbarHero/HeroText";
+import NavBar from "../NavbarHero/NavBar";
+import { MoreLikeCard } from "../MoreLikeThis/MoreLikeCard";
+import AboutPage from "./AboutPage";
 
 const PageContents = ({ event }) => {
   return (
@@ -22,7 +22,7 @@ const PageContents = ({ event }) => {
       }}
     >
       <HeroText event={event} type="artist" />
-      <AboutEvent />
+      <AboutPage event={event} type="aboutArtist" />
       <MoreLikeCard event={event.upcoming} type="upcoming" />
       <MoreLikeCard event={event.known} type="known" />
     </div>
@@ -35,10 +35,9 @@ const ArtistInfo = () => {
 
   //fetch yung data
   useEffect(() => {
-    getArtistInfo(parseInt(id))
-      .then((data) => {
-        setArtistData(data);
-      });
+    getArtistInfo(parseInt(id)).then((data) => {
+      setArtistData(data);
+    });
   }, [id]);
 
   return (
@@ -47,7 +46,7 @@ const ArtistInfo = () => {
       <NavBar />
       <PageContents event={artistData} />
     </div>
-  )
-}
+  );
+};
 
-export default ArtistInfo
+export default ArtistInfo;
