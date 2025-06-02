@@ -1,10 +1,17 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { HeroMain } from "./components/NavbarHero/HeroMain";
+import ArtistInfo from "./components/pages/ArtistInfo";
+import { EventInfo } from "./components/pages/EventInfo";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  return <HeroMain />;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<EventInfo />} />
+        <Route path="/artist/:id" element={<ArtistInfo />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

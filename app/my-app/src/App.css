@@ -1,54 +1,11 @@
 body {
   color: #fff;
+  background: #000000;
 }
 
-.sidebar {
-  width: 280px;
-  background-color: #25262b;
-  border-radius: 10px;
-  position: fixed;
-  right: 30px;
-  top: 60px;
-}
-.account-section {
-  padding: 0 20px;
-}
-.account-section .title {
-  font-weight: bold;
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.account-section .subtitle {
-  font-size: 13px;
-  color: #ccc;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-.buttons {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-button {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.sign-up {
-  width: 120px;
-  height: 35px;
-  background: linear-gradient(90deg, #c22026, #c400cb);
-  color: white;
-}
-
-.menu li span {
-  margin-right: 10px;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,58 +13,168 @@ button {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.menu li span img {
-  width: 22px;
-  height: 22px;
+
+.App-link {
+  color: #61dafb;
 }
 
-.burgerBtn {
+.nav-background {
+  width: 100%;
+  height: 600px;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  height: 88px;
+  background-color: transparent;
   display: flex;
   align-items: center;
+  padding: 0 20px;
+  z-index: 3;
+  transition: all 0.3s ease;
 }
-.eventBtn {
+
+.nav-inner {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-.eventBtn img {
-  margin-right: 16px;
-}
-.eventBtn p {
-  margin: 0 32px 0 0;
-}
-.nav-button {
+
+.side-menu {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
-  width: 80px;
-  height: 40px;
+  gap: 2rem;
+
+  .event-ticket,
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .event-ticket {
+    gap: 1rem;
+  }
+
+  .navbar-menu {
+    border-radius: 100px;
+    width: 80px;
+    height: 40px;
+    gap: 0.4rem;
+    background-color: #1e1f22;
+    position: relative;
+  }
+
+  .menu-icon {
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-icon.menu-btn {
+    cursor: pointer;
+  }
+
+  .menu-icon.user {
+    background-color: #101010;
+  }
+}
+
+.menu {
+  position: absolute;
+  top: 3rem;
+  right: 0;
   background-color: #1e1f22;
-  border-radius: 100px;
-  box-shadow: 0px 0px 4px 0px rgba(0, 18, 63, 0.06),
-    0px 4px 8px 0px rgba(0, 18, 63, 0.06);
-}
-.burger-icon {
-  cursor: pointer;
-}
-.burger-icon svg,
-.user-icon svg {
-  display: block;
+  color: white;
+  border-radius: 10px;
+  width: 310px;
+  overflow: hidden;
+  animation: hoverUp 0.3s ease;
+  box-shadow: 1px 0px 6px 3px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 1px 0px 6px 3px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 1px 0px 6px 3px rgba(0, 0, 0, 0.41);
+
+  .menu-icons {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .menu-create-account {
+    border-bottom: 1px solid black;
+  }
+
+  .menu-create-account p {
+    font-size: small;
+    color: gainsboro;
+  }
+
+  .menu-options {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0 20px;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+  }
+
+  .create-account-details {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .create-btns-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  .create-btn {
+    width: 100%;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .create-btn.signup {
+    background-image: linear-gradient(90deg, #c22026, #c400cb);
+  }
+
+  .create-btn.login {
+    background-color: #101010;
+  }
 }
 
-.user-icon {
-  background-color: #101010; /* matches the dark circle behind user icon */
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
+@keyframes hoverUp {
+  from {
+    top: 5;
+  }
+
+  to {
+    top: 3;
+  }
 }
+
 .tags {
   display: flex;
   gap: 8px;
 }
+
 .tags .tag {
   width: 90px;
   height: 32px;
@@ -117,4 +184,141 @@ button {
   justify-content: center;
   border-radius: 50px;
   background-color: rgba(194, 32, 38, 0.16);
+  font-size: 14px;
+}
+
+.artists-section h2 {
+  margin-left: 5px;
+}
+
+.artist-list {
+  margin-top: 1rem;
+  max-width: 691px;
+  height: 180px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+  overflow: hidden;
+
+  a {
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+  }
+}
+
+.artist-container {
+  width: 157px;
+  height: 157px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: 0.5s ease all;
+
+  p {
+    margin: 0;
+    padding: 11px 15px 14px 12px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    background-image: linear-gradient(#1e1f22);
+  }
+
+  img {
+    width: 100%;
+    height: 118px;
+  }
+
+  &:hover {
+    filter: grayscale(0%);
+
+    p {
+      background-image: linear-gradient(to right, #c22026, #c400cb);
+    }
+  }
+}
+/* footer css */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  border-top: #1e1f22 1px solid;
+  border-bottom: #1e1f22 1px solid;
+  margin-bottom: 55px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-section {
+  margin: 10px 20px;
+}
+
+/* Specific widths for each section */
+.logo-section {
+  flex: 0 0 150px;
+}
+
+.footer-section.links-small {
+  flex: 0 0 150px;
+}
+
+.footer-section.social-media {
+  flex: 0 0 350px;
+}
+
+.footer-logo {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 24px 0;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-media p {
+  margin-bottom: 10px;
+}
+.social-icons {
+  display: flex;
+}
+.social-icons a {
+  display: flex;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+
+  padding: 12px;
+}
+
+/* Media Query for small devices */
+
+@media (width <= 768px) {
+  .artist-list {
+    max-width: 100%;
+    height: fit-content;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

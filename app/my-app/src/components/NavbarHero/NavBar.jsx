@@ -1,70 +1,53 @@
-import React from "react";
-import "../../banner.css";
+import React, { useCallback, useEffect, useState } from "react";
 import logo from "../../assets/images/logo.png";
-import ticketIcon from "../../assets/images/ticket-icon.svg";
+import ticket from "../../assets/images/ticket-icon.svg";
+import NavMenu from "./NavMenu";
 
-export const NavBar = ({ toggleSidebarVisibility }) => {
+const NavBar = () => {
+  const [bgColor, setBgColor] = useState("rgba(0,0,0,0)");
+  const [bgBlur, setBgBlur] = useState("blur(0px)");
+
+  const handleNavChange = useCallback(() => {
+    const scrollY = window.scrollY;
+    if (scrollY >= 100) {
+      setBgColor("rgba(0,0,0,0.8)");
+      setBgBlur("blur(10px)");
+    } else {
+      setBgColor("rgba(0,0,0,0)");
+      setBgBlur("blur(0px)");
+    }
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleNavChange);
+    return () => {
+      window.removeEventListener("scroll", handleNavChange);
+    };
+  }, [handleNavChange]);
+
   return (
-    <div className="navBarHeader">
-      <div className="logo">
-        <img src={logo} alt=""></img>
-      </div>
-      <div className="burgerBtn">
-        <div className="eventBtn">
-          <img src={ticketIcon} alt=""></img>
-          <p>Events</p>
-        </div>
-        <div className="nav-button">
-          <div className="burger-icon" onClick={toggleSidebarVisibility}>
-            <svg
-              width="19.5"
-              height="12"
-              viewBox="0 0 22 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.25 13.0029H20.75"
-                stroke="white"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M1.25 7.00293H20.75"
-                stroke="white"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M1.25 1.00293H20.75"
-                stroke="white"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+    <header>
+      <nav
+        style={{
+          backgroundColor: bgColor,
+          backdropFilter: bgBlur,
+        }}
+      >
+        <div className="nav-inner">
+          <div>
+            <img src={logo} alt="logo" />
           </div>
-          <div class="user-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="none"
-              stroke="white"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              class="feather feather-user"
-              viewBox="0 0 24 24"
-            >
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-              <circle cx="12" cy="7" r="4" />
-            </svg>
+          <div className="side-menu">
+            <div className="event-ticket">
+              <img src={ticket} alt="ticket-icon" className="ticket-icon" />
+              <p style={{ color: "white" }}>Events</p>
+            </div>
+            <NavMenu />
           </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
+
+export default NavBar;

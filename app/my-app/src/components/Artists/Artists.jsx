@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom";
 import ArtistCard from "./ArtistCard";
 
 const Artists = ({ artists }) => {
 
   return (
-    <div>
+    <div className="artists-section">
       <h2>Artists</h2>
       <div className="artist-list">
-        {artists.map(artist => {
+        {artists && artists.map(artist => {
           return (
-            <ArtistCard key={artist.id} name={artist.name} profile={artist.profile} />
+            <Link key={artist.id} to={`/artist/${artist.id}`}><ArtistCard name={artist.name} profile={artist.profile} /></Link>
           )
         })}
       </div>
