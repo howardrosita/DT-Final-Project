@@ -6,6 +6,7 @@ import { HeroText } from "../NavbarHero/HeroText";
 import NavBar from "../NavbarHero/NavBar";
 import { MoreLikeCard } from "../MoreLikeThis/MoreLikeCard";
 import AboutPage from "../AboutEvents/AboutPage";
+import Loading from "../Loading";
 
 const PageContents = ({ event }) => {
   return (
@@ -31,19 +32,23 @@ const PageContents = ({ event }) => {
 
 const ArtistInfo = () => {
   const { id } = useParams();
+  const [isLoading, setIsLoading] = useState(true);
   const [artistData, setArtistData] = useState([]);
 
   //fetch yung data
   useEffect(() => {
     getArtistInfo(parseInt(id)).then((data) => {
       setArtistData(data);
+      setIsLoading(false);
     });
   }, [id]);
+
+  if (isLoading) return <Loading />
 
   return (
     <div key={artistData.id}>
       <NavBackground event={artistData} type="artist" />
-      <NavBar />
+      <NavBar type="artist" />
       <PageContents event={artistData} />
     </div>
   );

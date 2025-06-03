@@ -7,6 +7,7 @@ import { MoreLikeCard } from "../MoreLikeThis/MoreLikeCard";
 import Footer from "../Footer/Footer";
 import AboutPage from "../AboutEvents/AboutPage";
 import Artists from "../Artists/Artists";
+import Loading from "../Loading";
 //dito i cocompile mga component
 const PageContents = ({ event }) => {
   return (
@@ -34,13 +35,17 @@ const PageContents = ({ event }) => {
 
 export const EventInfo = () => {
   const [eventData, setEventData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   //fetch yung data
   useEffect(() => {
     getEvents().then((data) => {
       setEventData(data[0]);
+      setIsLoading(false);
     });
   }, []);
+
+  if (isLoading) return <Loading />
 
   return (
     <>
