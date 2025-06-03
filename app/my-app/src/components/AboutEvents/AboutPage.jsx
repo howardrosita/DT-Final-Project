@@ -1,6 +1,5 @@
 import "./styles.css";
 import React, { useEffect, useState } from "react";
-import Artists from "../Artists/Artists";
 import Card, { CardActions, CardContent, CardHeader } from "./components/card";
 import SimilarShows from "./components/SimilarShows";
 import Tags from "./components/Tags";
@@ -37,7 +36,6 @@ const AboutPage = ({ event, type }) => {
 
                   <Tags tags={event.tags} />
                   <SimilarShows similarEvents={event.similar} />
-                  <Artists artists={event.artists} />
                 </div>
                 {/* Right component sidebar */}
                 <div className="hidden about_event_right">
