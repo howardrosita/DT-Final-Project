@@ -6,8 +6,9 @@ import GalleryIcon from "../../assets/images/gallery-icon.png";
 import ShareIcon from "../../assets/images/share-icon.png";
 import HeartIcon from "../../assets/images/heart-icon-mobile.png";
 import NavMenu from "./NavMenu";
+import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({ type }) => {
   const [bgColor, setBgColor] = useState("rgba(0,0,0,0)");
   const [bgBlur, setBgBlur] = useState("blur(0px)");
 
@@ -50,9 +51,7 @@ const NavBar = () => {
           </div>
           <div className="mobileNavIcon">
             <div className="arrow-icon">
-              <a href="#">
-                <img src={leftArrow} alt="left-arrow"></img>
-              </a>
+              <Link to={type === "artist" ? -1 : "#"}><img src={leftArrow} alt="left-arrow"></img></Link>
             </div>
             <div className="mobileNav">
               <a href="#">
