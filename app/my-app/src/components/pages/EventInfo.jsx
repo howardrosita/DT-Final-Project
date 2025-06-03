@@ -53,7 +53,7 @@ export const EventInfo = () => {
         <NavBackground event={eventData} /> {/* background ng page */}
         <NavBar event={eventData} /> {/* navbar na sticky */}
         <PageContents event={eventData} />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

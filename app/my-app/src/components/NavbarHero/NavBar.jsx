@@ -11,15 +11,18 @@ import { Link } from "react-router-dom";
 const NavBar = ({ type }) => {
   const [bgColor, setBgColor] = useState("rgba(0,0,0,0)");
   const [bgBlur, setBgBlur] = useState("blur(0px)");
+  const [isSticky, setIsSticky] = useState(false)
 
   const handleNavChange = useCallback(() => {
     const scrollY = window.scrollY;
-    if (scrollY >= 100) {
+    if (scrollY >= 195) {
       setBgColor("rgba(0,0,0,0.8)");
-      setBgBlur("blur(10px)");
+      setBgBlur("blur(64px)");
+      setIsSticky(true);
     } else {
       setBgColor("rgba(0,0,0,0)");
       setBgBlur("blur(0px)");
+      setIsSticky(false);
     }
   }, []);
 
@@ -36,6 +39,7 @@ const NavBar = ({ type }) => {
         style={{
           backgroundColor: bgColor,
           backdropFilter: bgBlur,
+          boxShadow: isSticky ? "2px 2px 15px 2px rgb(2, 2, 2)" : ""
         }}
       >
         <div className="nav-inner">
@@ -44,8 +48,13 @@ const NavBar = ({ type }) => {
           </div>
           <div className="side-menu">
             <div className="event-ticket">
-              <img src={ticket} alt="ticket-icon" className="ticket-icon" />
-              <p style={{ color: "white" }}>Events</p>
+              {!isSticky &&
+                <>
+                  <img src={ticket} alt="ticket-icon" className="ticket-icon" />
+                  <p>Events</p>
+                </>
+              }
+              {isSticky && <p>For professionals</p>}
             </div>
             <NavMenu />
           </div>
