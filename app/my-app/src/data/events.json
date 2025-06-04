@@ -6,11 +6,7 @@
     "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
     "location": "@San Francisco, CA - Golden Gate Theatre ",
     "date": "March 4, 2020 - Dec 31, 2020",
-    "tags": [
-      "Theater",
-      "Musical",
-      "Comedy"
-    ],
+    "tags": ["Theater", "Musical", "Comedy"],
     "price": "$50 - $200",
     "similar": [
       "Glee",
@@ -80,16 +76,11 @@
         "icon": "./src/assets/email.png"
       }
     ],
-    "vibe": [
-      "Chill",
-      "Upbeat",
-      "Funny",
-      "Playful"
-    ],
+    "vibe": ["Chill", "Upbeat", "Funny", "Playful"],
     "more": [
       {
         "id": "mor1",
-        "imgUrl": "./src/data/events/sf-orchestra.png",
+        "imgUrl": "/images/events/sf-orchestra.png",
         "title": "SF Orchestra",
         "location": "San Francisco, CA",
         "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -106,7 +97,7 @@
       },
       {
         "id": "mor2",
-        "imgUrl": "./src/data/events/hamilton.png",
+        "imgUrl": "/images/events/hamilton.png",
         "title": "Hamilton",
         "location": "New York City, NY",
         "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -123,7 +114,7 @@
       },
       {
         "id": "mor3",
-        "imgUrl": "./src/data/events/sf-soundbox.png",
+        "imgUrl": "/images/events/sf-soundbox.png",
         "title": "SF Symphony Sound Box",
         "location": "San Francisco, CA",
         "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
@@ -140,8 +131,59 @@
       },
       {
         "id": "mor4",
-        "imgUrl": "./src/data/events/moulin-rouge.png",
+        "imgUrl": "/images/events/sf-soundbox.png",
         "title": "Moulin Rouge",
+        "location": "New York City, NY",
+        "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+        "prices": [
+          {
+            "type": "Member",
+            "price": "$50"
+          },
+          {
+            "type": "Standard",
+            "price": "$100"
+          }
+        ]
+      },
+      {
+        "id": "mor5",
+        "imgUrl": "/images/events/hamilton.png",
+        "title": "SmashMouth",
+        "location": "New York City, NY",
+        "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+        "prices": [
+          {
+            "type": "Member",
+            "price": "$50"
+          },
+          {
+            "type": "Standard",
+            "price": "$100"
+          }
+        ]
+      },
+      {
+        "id": "mor6",
+        "imgUrl": "/images/events/sf-orchestra.png",
+        "title": "New Age Girl",
+        "location": "New York City, NY",
+        "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+        "prices": [
+          {
+            "type": "Member",
+            "price": "$50"
+          },
+          {
+            "type": "Standard",
+            "price": "$100"
+          }
+        ]
+      },
+      {
+        "id": "mor7",
+        "imgUrl": "/images/events/moulin-rouge.png",
+        "title": "N'Sync",
         "location": "New York City, NY",
         "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
         "prices": [

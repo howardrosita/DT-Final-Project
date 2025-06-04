@@ -2,15 +2,18 @@ import { useState, useEffect } from "react";
 import { getEvents } from "../../services/events.service";
 import NavBackground from "../NavbarHero/NavBackground";
 import NavBar from "../NavbarHero/NavBar";
-import Artists from "../Artists/Artists";
-import LocationPin from "../../assets/images/pin-icon.png";
 import { HeroText } from "../NavbarHero/HeroText";
+import { MoreLikeCard } from "../MoreLikeThis/MoreLikeCard";
+import Footer from "../Footer/Footer";
+import AboutPage from "../AboutEvents/AboutPage";
+import Artists from "../Artists/Artists";
+import Loading from "../Loading";
 //dito i cocompile mga component
 const PageContents = ({ event }) => {
   return (
     <div
       style={{
-        height: "1500px",
+        height: "fit-content",
         zIndex: 1,
         backgroundColor: "transparent",
         color: "white",
@@ -21,9 +24,10 @@ const PageContents = ({ event }) => {
       }}
     >
       <HeroText event={event} />
-      {/* <AboutSection /> */}
+      <AboutPage event={event} type="aboutEvent" />
       <Artists artists={event.artists} />
       {/* <MoreSection /> */}
+      <MoreLikeCard event={event.more} type="more" />
       {/* <Footer /> */}
     </div>
   );
@@ -31,13 +35,17 @@ const PageContents = ({ event }) => {
 
 export const EventInfo = () => {
   const [eventData, setEventData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   //fetch yung data
   useEffect(() => {
     getEvents().then((data) => {
       setEventData(data[0]);
+      setIsLoading(false);
     });
   }, []);
+
+  if (isLoading) return <Loading />
 
   return (
     <>
@@ -45,6 +53,7 @@ export const EventInfo = () => {
         <NavBackground event={eventData} /> {/* background ng page */}
         <NavBar event={eventData} /> {/* navbar na sticky */}
         <PageContents event={eventData} />
+        <Footer />
       </div>
     </>
   );

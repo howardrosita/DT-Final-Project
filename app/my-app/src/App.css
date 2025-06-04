@@ -1,6 +1,10 @@
 body {
   color: #fff;
-  background: #333;
+  background: #000000;
+}
+
+.App {
+  position: relative;
 }
 
 .App-header {
@@ -20,6 +24,7 @@ body {
 
 .nav-background {
   width: 100%;
+  max-width: 100vw;
   height: 600px;
   position: fixed;
   top: 0;
@@ -29,6 +34,7 @@ body {
 header {
   position: sticky;
   top: 0;
+  z-index: 3;
 }
 
 nav {
@@ -36,9 +42,14 @@ nav {
   background-color: transparent;
   display: flex;
   align-items: center;
-  padding: 0 20px;
-  z-index: 3;
+  padding: 20px 32px;
   transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mobileNavIcon {
+  display: none;
 }
 
 .nav-inner {
@@ -46,6 +57,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .side-menu {
@@ -62,6 +74,11 @@ nav {
 
   .event-ticket {
     gap: 1rem;
+  }
+
+  .event-ticket p {
+    font-size: 1rem;
+    font-weight: 600;
   }
 
   .navbar-menu {
@@ -101,6 +118,9 @@ nav {
   width: 310px;
   overflow: hidden;
   animation: hoverUp 0.3s ease;
+  box-shadow: 1px 0px 6px 3px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 1px 0px 6px 3px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 1px 0px 6px 3px rgba(0, 0, 0, 0.41);
 
   .menu-icons {
     width: 1rem;
@@ -127,8 +147,7 @@ nav {
   }
 
   .create-account-details {
-    padding: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 1rem 0 1rem;
   }
 
   .create-btns-container {
@@ -166,4 +185,306 @@ nav {
   to {
     top: 3;
   }
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+}
+
+.tags .tag {
+  width: 90px;
+  height: 32px;
+  border: 1px solid #c22026;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: rgba(194, 32, 38, 0.16);
+  font-size: 14px;
+}
+
+.artists-section {
+  max-width: 691px;
+}
+
+.artists-section h2 {
+  margin-left: 5px;
+}
+
+.artist-container {
+  width: 157px;
+  height: 157px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: 0.5s ease all;
+
+  p {
+    margin: 0;
+    padding: 11px 15px 14px 12px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    background-image: linear-gradient(#1e1f22);
+  }
+
+  img {
+    width: 100%;
+    height: 118px;
+  }
+
+  &:hover {
+    filter: grayscale(0%);
+
+    p {
+      background-image: linear-gradient(to right, #c22026, #c400cb);
+    }
+  }
+}
+
+/* footer css */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  border-top: #1e1f22 1px solid;
+  border-bottom: #1e1f22 1px solid;
+  margin-bottom: 55px;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.footer-section {
+  margin: 10px 20px;
+}
+
+/* Specific widths for each section */
+.logo-section {
+  flex: 0 0 150px;
+}
+
+.footer-section.links-small {
+  flex: 0 0 150px;
+}
+
+.footer-section.social-media {
+  flex: 0 0 350px;
+}
+
+.footer-logo {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 24px 0;
+}
+
+.footer-section a:hover {
+  color: #c22026;
+}
+
+.social-media p {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  display: flex;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+  transition: background-color 0.25s;
+}
+
+.social-icons a:hover {
+  background-color: #c22026;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+
+  padding: 12px;
+}
+
+.loading-wrapper {
+  width: 100svw;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-container {
+  display: flex;
+  gap: .5rem;
+
+  .item-1,
+  .item-2,
+  .item-3 {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: linear-gradient(#1E1F22);
+    border-radius: 50px;
+  }
+
+  .item-1 {
+    animation: animate1 .8s infinite;
+  }
+
+  .item-2 {
+    animation: animate2 .8s infinite;
+  }
+
+  .item-3 {
+    animation: animate3 .8s infinite;
+  }
+}
+
+@keyframes animate1 {
+  20% {
+
+    background-image: linear-gradient(to right, #C22026, #C400CB);
+  }
+
+  25% {
+    background-image: linear-gradient(#1E1F22);
+  }
+
+  50% {
+    background-image: linear-gradient(#1E1F22);
+  }
+
+  75% {
+    background-image: linear-gradient(#1E1F22);
+  }
+
+  100% {
+    background-image: linear-gradient(#1E1F22);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-image: linear-gradient(#1E1F22);
+  }
+
+  25% {
+    background-image: linear-gradient(#1E1F22);
+  }
+
+  40% {
+    background-image: linear-gradient(to right, #C22026, #C400CB);
+  }
+
+  75% {
+    background-image: linear-gradient(#1E1F22);
+  }
+
+  100% {
+    background-image: linear-gradient(#1E1F22);
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    background-image: linear-gradient(#1E1F22);
+  }
+
+  25% {
+    background-image: linear-gradient(#1E1F22);
+  }
+
+  50% {
+    background-image: linear-gradient(#1E1F22);
+  }
+
+  75% {
+    background-image: linear-gradient(to right, #C22026, #C400CB);
+  }
+}
+
+/* Media Query for small devices */
+
+@media screen and (max-width: 768px) {
+  .artists-section {
+    margin-top: 1rem;
+  }
+
+  .mobileNavIcon {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+
+  .mobileNavIcon a {
+    display: flex;
+    border-radius: 50%;
+    background-color: #2a2a2a;
+    transition: background-color 0.25s;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+  }
+
+  .mobileNavIcon img {
+    padding: 12px;
+  }
+
+  .mobileNav {
+    display: flex;
+    gap: 1rem;
+  }
+
+  nav {
+    padding: 12px 1rem;
+    height: auto;
+  }
+
+  .side-menu {
+    .event-ticket {
+      display: none;
+    }
+  }
+}
+
+.footer-container {
+  flex-direction: column;
+}
+
+.footer-logo {
+  margin-bottom: 0;
+}
+
+.logo-section {
+  flex: 0;
+}
+
+.footer-section.links-small {
+  flex: 0;
+}
+
+.footer-section.social-media {
+  flex: 0;
 }
