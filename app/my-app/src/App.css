@@ -34,15 +34,15 @@ body {
 header {
   position: sticky;
   top: 0;
+  z-index: 3;
 }
 
 nav {
-  height: auto;
+  height: 88px;
   background-color: transparent;
   display: flex;
   align-items: center;
-  padding: 10px 20px;
-  z-index: 3;
+  padding: 20px 32px;
   transition: all 0.3s ease;
   width: 100%;
   box-sizing: border-box;
@@ -74,6 +74,11 @@ nav {
 
   .event-ticket {
     gap: 1rem;
+  }
+
+  .event-ticket p {
+    font-size: 1rem;
+    font-weight: 600;
   }
 
   .navbar-menu {
@@ -435,12 +440,11 @@ nav {
 
   .mobileNavIcon a {
     display: flex;
-    margin-right: 10px;
     border-radius: 50%;
     background-color: #2a2a2a;
     transition: background-color 0.25s;
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     justify-content: center;
   }
 
@@ -450,6 +454,18 @@ nav {
 
   .mobileNav {
     display: flex;
+    gap: 1rem;
+  }
+
+  nav {
+    padding: 12px 1rem;
+    height: auto;
+  }
+
+  .side-menu {
+    .event-ticket {
+      display: none;
+    }
   }
 }
 

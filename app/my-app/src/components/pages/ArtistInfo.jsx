@@ -7,12 +7,13 @@ import NavBar from "../NavbarHero/NavBar";
 import { MoreLikeCard } from "../MoreLikeThis/MoreLikeCard";
 import AboutPage from "../AboutEvents/AboutPage";
 import Loading from "../Loading";
+import Footer from "../Footer/Footer";
 
 const PageContents = ({ event }) => {
   return (
     <div
       style={{
-        height: "1500px",
+        height: "fit-content",
         zIndex: 1,
         backgroundColor: "transparent",
         color: "white",
@@ -50,6 +51,7 @@ const ArtistInfo = () => {
       <NavBackground event={artistData} type="artist" />
       <NavBar type="artist" />
       <PageContents event={artistData} />
+      <Footer />
     </div>
   );
 };
