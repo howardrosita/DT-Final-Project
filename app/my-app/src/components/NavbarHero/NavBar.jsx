@@ -7,6 +7,7 @@ import ShareIcon from "../../assets/images/share-icon.png";
 import HeartIcon from "../../assets/images/heart-icon-mobile.png";
 import NavMenu from "./NavMenu";
 import { Link } from "react-router-dom";
+import NavSearch from "./NavSearch";
 
 const NavBar = ({ type }) => {
   const [bgColor, setBgColor] = useState("rgba(0,0,0,0)");
@@ -43,9 +44,10 @@ const NavBar = ({ type }) => {
         }}
       >
         <div className="nav-inner">
-          <div>
+          <div className="logo-container">
             <img src={logo} alt="logo" />
           </div>
+          <NavSearch type={type} />
           <div className="side-menu">
             <div className="event-ticket">
               {!isSticky &&
@@ -69,9 +71,11 @@ const NavBar = ({ type }) => {
               <a href="#">
                 <img src={ShareIcon} alt="share-icon"></img>
               </a>
-              <a href="#">
-                <img src={HeartIcon} alt="heart-icon"></img>
-              </a>
+              {type !== "artist" &&
+                <a href="#">
+                  <img src={HeartIcon} alt="heart-icon"></img>
+                </a>
+              }
             </div>
           </div>
         </div>

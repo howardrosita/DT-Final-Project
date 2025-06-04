@@ -7,7 +7,7 @@ import mvPlayIcon from "../../assets/images/movie-player-icon.png";
 
 const Menu = () => {
   return (
-    <div className="menu">
+    <div className="menu" onClick={(e) => e.stopPropagation()}>
       <div className="menu-create-account">
         <div className="create-account-details">
           <h3>Create your account!</h3>
