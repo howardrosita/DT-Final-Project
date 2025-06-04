@@ -6,6 +6,8 @@ import black from "../../assets/images/BlackWall.png";
 import { MoreCardDetails } from "./MoreCardDetails";
 import eventData from "../../data/events.json";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -253,8 +255,9 @@ export const MoreLikeCard = ({ event, type }) => {
     backgroundImage: `url(${image})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    width: "300px",
-    height: "200px",
+    backgroundSize: "cover",
+    width: "282px",
+    height: "207px",
     display: "block",
     position: "relative",
   });
@@ -264,16 +267,21 @@ export const MoreLikeCard = ({ event, type }) => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     width: "300px",
-    height: "340px",
+    height: "fit-content",
     display: "block",
     backgroundSize: "cover",
     position: "relative",
+    paddingBottom: "1rem",
   });
 
   const heartContainerStyle = {
     position: "absolute",
-    top: "10px",
-    right: "10px",
+    top: "12px",
+    right: "12px",
+    width: "24px",
+    height: "24px",
+    display: "grid",
+    placeContent: "center",
     zIndex: 2,
   };
 
@@ -302,66 +310,53 @@ export const MoreLikeCard = ({ event, type }) => {
   };
 
   const cardContainerStyle = {
-    width: "300px", // card width
+    width: "282px", // card width
+    maxHeight: "482px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     backgroundColor: "transparent",
     overflow: "hidden",
+    borderRadius: "1rem",
+    cursor: "pointer",
+  };
+
+  const headingContainerStyle = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    margin: "56px 0 2rem 3px",
   };
 
   return (
     <>
       {type === "more" && (
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-          }}
-        >
+        <div style={headingContainerStyle}>
           <h2>More Like This</h2>
         </div>
       )}
       {type === "upcoming" && (
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-          }}
-        >
+        <div style={headingContainerStyle}>
           <h2>Upcoming events</h2>
           <Arrows />
         </div>
       )}
       {type === "known" && (
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-          }}
-        >
+        <div style={headingContainerStyle}>
           <h2>Known for</h2>
           <Arrows />
         </div>
       )}
-      <Swiper
-        modules={[Navigation, Pagination]}
-        spaceBetween={-250}
-        slidesPerView={-1}
-        navigation
-        pagination={{ clickable: true }}
-        breakpoints={{
-          640: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+      <Splide
+        options={{
+          arrows: false,
+          autoWidth: true,
+          gap: "24px",
         }}
       >
         {cards &&
           cards.map((card) => (
-            <SwiperSlide key={card.id}>
+            <SplideSlide key={card.id}>
               <div style={cardContainerStyle}>
                 <div style={boxStyle(card.imageUrl)}>
                   <div style={heartContainerStyle}>
@@ -383,12 +378,13 @@ export const MoreLikeCard = ({ event, type }) => {
                     price2={card.price2}
                     admission1={card.admission1}
                     admission2={card.admission2}
+                    type={type}
                   />
                 </div>
               </div>
-            </SwiperSlide>
+            </SplideSlide>
           ))}
-      </Swiper>
+      </Splide>
     </>
   );
 };

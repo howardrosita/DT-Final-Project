@@ -337,90 +337,89 @@ nav {
 
 .loading-container {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
 
   .item-1,
   .item-2,
   .item-3 {
     width: 1.5rem;
     height: 1.5rem;
-    background-image: linear-gradient(#1E1F22);
+    background-image: linear-gradient(#1e1f22);
     border-radius: 50px;
   }
 
   .item-1 {
-    animation: animate1 .8s infinite;
+    animation: animate1 0.8s infinite;
   }
 
   .item-2 {
-    animation: animate2 .8s infinite;
+    animation: animate2 0.8s infinite;
   }
 
   .item-3 {
-    animation: animate3 .8s infinite;
+    animation: animate3 0.8s infinite;
   }
 }
 
 @keyframes animate1 {
   20% {
-
-    background-image: linear-gradient(to right, #C22026, #C400CB);
+    background-image: linear-gradient(to right, #c22026, #c400cb);
   }
 
   25% {
-    background-image: linear-gradient(#1E1F22);
+    background-image: linear-gradient(#1e1f22);
   }
 
   50% {
-    background-image: linear-gradient(#1E1F22);
+    background-image: linear-gradient(#1e1f22);
   }
 
   75% {
-    background-image: linear-gradient(#1E1F22);
+    background-image: linear-gradient(#1e1f22);
   }
 
   100% {
-    background-image: linear-gradient(#1E1F22);
+    background-image: linear-gradient(#1e1f22);
   }
 }
 
 @keyframes animate2 {
   0% {
-    background-image: linear-gradient(#1E1F22);
+    background-image: linear-gradient(#1e1f22);
   }
 
   25% {
-    background-image: linear-gradient(#1E1F22);
+    background-image: linear-gradient(#1e1f22);
   }
 
   40% {
-    background-image: linear-gradient(to right, #C22026, #C400CB);
+    background-image: linear-gradient(to right, #c22026, #c400cb);
   }
 
   75% {
-    background-image: linear-gradient(#1E1F22);
+    background-image: linear-gradient(#1e1f22);
   }
 
   100% {
-    background-image: linear-gradient(#1E1F22);
+    background-image: linear-gradient(#1e1f22);
   }
 }
 
 @keyframes animate3 {
   0% {
-    background-image: linear-gradient(#1E1F22);
+    background-image: linear-gradient(#1e1f22);
   }
 
   25% {
-    background-image: linear-gradient(#1E1F22);
+    background-image: linear-gradient(#1e1f22);
   }
 
   50% {
-    background-image: linear-gradient(#1E1F22);
+    background-image: linear-gradient(#1e1f22);
   }
 
   75% {
-    background-image: linear-gradient(to right, #C22026, #C400CB);
+    background-image: linear-gradient(to right, #c22026, #c400cb);
   }
 }
 
@@ -467,6 +466,10 @@ nav {
       display: none;
     }
   }
+
+  .more-arrows {
+    display: none;
+  }
 }
 
 .footer-container {
@@ -487,4 +490,17 @@ nav {
 
 .footer-section.social-media {
   flex: 0;
+}
+
+.more-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.more-arrows {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
