@@ -323,7 +323,6 @@ nav {
 .tags {
   display: flex;
   gap: 8px;
-  margin-top: 24px;
 }
 
 .tags .tag {
