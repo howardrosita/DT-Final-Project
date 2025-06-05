@@ -1,3 +1,8 @@
+:root {
+  --mobile-nav-display: none;
+  --nav-height: 88px;
+}
+
 body {
   color: #fff;
   background: #000000;
@@ -38,10 +43,9 @@ header {
 }
 
 nav {
-  height: 88px;
+  height: var(--nav-height);
   background-color: transparent;
-  display: flex;
-  align-items: center;
+  display: grid;
   padding: 20px 32px;
   transition: all 0.3s ease;
   width: 100%;
@@ -49,7 +53,48 @@ nav {
 }
 
 .mobileNavIcon {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.mobileNavIcon-inner {
+  display: var(--mobile-nav-display);
+  max-width: 1200px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.mobileNavIcon a {
+  display: flex;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+  transition: background-color 0.25s;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+}
+
+.mobileNav a:nth-child(1) {
   display: none;
+}
+
+.mobileNavIcon img {
+  padding: 12px;
+}
+
+.mobileNav {
+  display: flex;
+  gap: 1rem;
+
+  button {
+    width: 138px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right, #c22026, #c400cb);
+    color: white;
+    cursor: pointer;
+  }
 }
 
 .nav-inner {
@@ -278,6 +323,7 @@ nav {
 .tags {
   display: flex;
   gap: 8px;
+  margin-top: 24px;
 }
 
 .tags .tag {
@@ -290,6 +336,11 @@ nav {
   border-radius: 50px;
   background-color: rgba(194, 32, 38, 0.16);
   font-size: 14px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(194, 32, 38, 1);
+  }
 }
 
 .artists-section {
@@ -536,35 +587,23 @@ nav {
     margin-top: 1rem;
   }
 
-  .mobileNavIcon {
+  .mobileNavIcon-inner {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin: 10px 0;
   }
 
-  .mobileNavIcon a {
+  .mobileNav a:nth-child(1) {
     display: flex;
-    border-radius: 50%;
-    background-color: #2a2a2a;
-    transition: background-color 0.25s;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-  }
-
-  .mobileNavIcon img {
-    padding: 12px;
   }
 
   .mobileNav {
-    display: flex;
-    gap: 1rem;
+    button {
+      display: none;
+    }
   }
 
   nav {
     padding: 12px 1rem;
-    height: auto;
+    height: fit-content;
   }
 
   .side-menu {
@@ -597,24 +636,24 @@ nav {
     display: block;
     margin-right: 1rem;
   }
-}
 
-.footer-container {
-  flex-direction: column;
-}
+  .footer-container {
+    flex-direction: column;
+  }
 
-.footer-logo {
-  margin-bottom: 0;
-}
+  .footer-logo {
+    margin-bottom: 0;
+  }
 
-.logo-section {
-  flex: 0;
-}
+  .logo-section {
+    flex: 0;
+  }
 
-.footer-section.links-small {
-  flex: 0;
-}
+  .footer-section.links-small {
+    flex: 0;
+  }
 
-.footer-section.social-media {
-  flex: 0;
+  .footer-section.social-media {
+    flex: 0;
+  }
 }
