@@ -5,7 +5,7 @@ import React from "react";
 // import sara from "../../assets/images/sara.jpg";
 
 const NavBackground = ({ event, type }) => {
-  const bgGradient = type !== "artist" ? "rgba(0,0,0,0),rgba(0,0,0,0.9)" : "rgba(0,0,0,0.4),rgba(0,0,0,1)";
+  const bgGradient = type !== "artist" ? "rgba(0,0,0,0),rgba(0,0,0,0.9)" : "rgba(0,0,0,0.2),rgba(0,0,0,1)";
   return (
     <div
       style={{
