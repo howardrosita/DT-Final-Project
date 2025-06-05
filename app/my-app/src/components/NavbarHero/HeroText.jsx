@@ -20,7 +20,7 @@ export const HeroText = ({ event, type }) => {
           <p>{event.date}</p>
         </>
       }
-      {event.tags && <Tags tags={event.tags} />}
+      {event.tags && <Tags tags={event.tags} type={type} />}
     </div>
   );
 };
