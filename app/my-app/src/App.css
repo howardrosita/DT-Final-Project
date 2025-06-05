@@ -1,5 +1,6 @@
 :root {
   --mobile-nav-display: none;
+  --mobile-nav-icon: none;
   --nav-height: 88px;
 }
 
@@ -46,6 +47,7 @@ nav {
   height: var(--nav-height);
   background-color: transparent;
   display: grid;
+  align-content: center;
   padding: 20px 32px;
   transition: all 0.3s ease;
   width: 100%;
@@ -53,6 +55,7 @@ nav {
 }
 
 .mobileNavIcon {
+  display: var(--mobile-nav-icon);
   width: 100%;
   padding-top: 1rem;
 }
@@ -598,6 +601,10 @@ nav {
     button {
       display: none;
     }
+  }
+
+  .mobileNavIcon {
+    display: block;
   }
 
   nav {

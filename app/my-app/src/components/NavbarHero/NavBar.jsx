@@ -64,6 +64,7 @@ const NavBar = ({ type }) => {
         </div>
         <div className="mobileNavIcon" style={{
           ['--mobile-nav-display']: type === "artist" ? "flex" : "none",
+          ['--mobile-nav-icon']: type === "artist" ? "block" : "none",
         }}>
           <div className="mobileNavIcon-inner">
             <div className="arrow-icon">
