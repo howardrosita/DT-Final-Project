@@ -4,11 +4,12 @@ import React from "react";
 // import martin from "../../assets/images/martin.jpg";
 // import sara from "../../assets/images/sara.jpg";
 
-const NavBackground = ({ event }) => {
+const NavBackground = ({ event, type }) => {
+  const bgGradient = type !== "artist" ? "rgba(0,0,0,0),rgba(0,0,0,0.9)" : "rgba(0,0,0,0.4),rgba(0,0,0,1)";
   return (
     <div
       style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,1)),url("${event.imageUrl}")`,
+        backgroundImage: `linear-gradient(${bgGradient}),url("${event.imageUrl}")`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center center",
