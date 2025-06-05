@@ -1,10 +1,8 @@
 :root {
   --btn-bg-color-red: rgba(194, 32, 38, 0.16);
-  --btn-red-gradient: linear-gradient(
-    120deg,
-    rgba(194, 32, 38, 1) 30%,
-    rgba(196, 0, 203, 1) 85%
-  );
+  --btn-red-gradient: linear-gradient(120deg,
+      rgba(194, 32, 38, 1) 30%,
+      rgba(196, 0, 203, 1) 85%);
   --bg-card-color: rgba(30, 31, 34, 1);
   --event-gap: 1rem;
   --event-card-border-radius: 1rem;
@@ -58,12 +56,13 @@ div.about_event_container {
 }
 
 div.about_event_left {
-  & > div.header {
+  &>div.header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  & > div.tags {
+
+  &>div.tags {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -73,7 +72,7 @@ div.about_event_left {
       flex-wrap: wrap;
       gap: 0.5rem;
 
-      & > button.tag_btn {
+      &>button.tag_btn {
         display: flex;
         align-items: center;
         background-color: var(--btn-bg-color-red);
@@ -95,7 +94,7 @@ div.about_event_left {
     }
   }
 
-  & > .similar_shows {
+  &>.similar_shows {
     display: flex;
     flex-direction: column;
 
@@ -103,14 +102,19 @@ div.about_event_left {
       padding: 0;
     }
   }
+
+  .similar_shows_list {
+    padding-left: 1.7rem;
+  }
 }
 
 div.about_event_right {
-  & > div.price_range_card {
+  &>div.price_range_card {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   & div.useful_info_card {
     display: flex;
     flex-direction: column;
@@ -126,10 +130,10 @@ div.about_event_right {
   border-radius: var(--event-card-border-radius);
 
   &:has(.card_header) {
-    & > .card_header {
+    &>.card_header {
       padding: 1rem;
 
-      & > h2 {
+      &>h2 {
         font-size: var(--h2-size);
       }
     }
@@ -145,16 +149,16 @@ div.about_event_right {
     display: flex;
     flex-direction: column;
 
-    & > .card_header {
+    &>.card_header {
       padding: 1rem;
 
-      & > h2 {
+      &>h2 {
         font-size: var(--h2-size);
       }
     }
   }
 
-  & > ul.useful_info_list {
+  &>ul.useful_info_list {
     display: flex;
     flex-direction: column;
     list-style-type: none;
@@ -188,7 +192,7 @@ div.about_event_right {
   gap: var(--event-gap);
   padding: 0.5rem;
 
-  & > button:not(.social_btn) {
+  &>button:not(.social_btn) {
     background: var(--btn-bg-color-red);
     background: var(--btn-red-gradient);
     color: white;
@@ -221,7 +225,7 @@ div.about_event_right {
 }
 
 .card_header {
-  & > span {
+  &>span {
     font-size: 0.875rem;
   }
 }
@@ -253,7 +257,7 @@ div.about_event_right {
 }
 
 /* Mobile drawer styles */
-@media (width <= 40rem) {
+@media (width <=40rem) {
   .drawer {
     display: flex;
     width: 100%;
@@ -287,11 +291,11 @@ div.about_event_right {
   }
 }
 
-@media (width <= 40rem) {
+@media (width <=40rem) {
   div.about_event_container {
     display: block;
 
-    & > div.about_event_left,
+    &>div.about_event_left,
     div.about_event_right {
       flex: 1 1 auto;
     }
