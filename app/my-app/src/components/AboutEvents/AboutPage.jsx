@@ -34,7 +34,7 @@ const AboutPage = ({ event, type }) => {
                     <p>{event.description}</p>
                   </div>
 
-                  <Tags tags={event.tags} />
+                  <Tags tags={event.vibe} />
                   <SimilarShows similarEvents={event.similar} />
                 </div>
                 {/* Right component sidebar */}
@@ -84,7 +84,7 @@ const AboutPage = ({ event, type }) => {
                     <p>{artist.about3}</p>
                   </div>
 
-                  <Tags tags={artist.tags} />
+                  <Tags tags={artist.vibe} />
                 </div>
 
                 {/* Right component similar to sidebar */}
