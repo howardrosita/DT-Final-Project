@@ -40,7 +40,8 @@ const NavBar = ({ type }) => {
         style={{
           backgroundColor: bgColor,
           backdropFilter: bgBlur,
-          boxShadow: isSticky ? "2px 2px 15px 2px rgb(2, 2, 2)" : ""
+          boxShadow: isSticky ? "2px 2px 15px 2px rgb(2, 2, 2)" : "",
+          ["--nav-height"]: type === "artist" ? "fit-content" : "88px"
         }}
       >
         <div className="nav-inner">
@@ -60,7 +61,11 @@ const NavBar = ({ type }) => {
             </div>
             <NavMenu />
           </div>
-          <div className="mobileNavIcon">
+        </div>
+        <div className="mobileNavIcon" style={{
+          ['--mobile-nav-display']: type === "artist" ? "flex" : "none",
+        }}>
+          <div className="mobileNavIcon-inner">
             <div className="arrow-icon">
               <Link to={type === "artist" ? -1 : "#"}><img src={leftArrow} alt="left-arrow"></img></Link>
             </div>
@@ -76,6 +81,7 @@ const NavBar = ({ type }) => {
                   <img src={HeartIcon} alt="heart-icon"></img>
                 </a>
               }
+              {type === "artist" && <button>Follow</button>}
             </div>
           </div>
         </div>
