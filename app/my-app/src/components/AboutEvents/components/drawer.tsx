@@ -2,6 +2,7 @@ import { useState } from "react";
 import Card, { CardHeader, CardActions, CardContent } from "./card";
 import SocialInfo from "./SocialInfo";
 import UsefulInfo from "./UsefulInfo";
+import InfoIcon from "../../../assets/images/info.svg";
 
 const Drawer = ({
   event,
@@ -145,7 +146,7 @@ const Drawer = ({
             }}
           >
             <button className="drawer_btn" onClick={toggleDrawer}>
-              {isDrawerOpen ? "Less" : "Info"}
+              {!isDrawerOpen ? <img src={InfoIcon} alt="Info Icon" /> : "Less"}
             </button>
             <button>
               {type === "aboutEvent" ? "Buy Tickets" : "Follow Artist"}
