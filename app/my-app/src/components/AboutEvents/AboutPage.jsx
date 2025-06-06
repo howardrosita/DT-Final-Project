@@ -96,18 +96,21 @@ const AboutPage = ({ event, type }) => {
                       display: "flex",
                       justifyContent: "space-between",
                       alignItems: "center",
-                      padding: "0.5rem",
-                      width: "fit-content",
                       margin: "0 0 auto auto",
+                      borderRadius: "100px",
                     }}
                   >
                     {/* Card content */}
                     <CardContent>
                       <div
                         style={{
+                          width: "138px",
+                          height: "48px",
                           display: "flex",
+                          justifyContent: "center",
                           alignItems: "center",
                           gap: "0.5rem",
+                          padding: "0 .5rem"
                         }}
                       >
                         <img src={ImageIcon} alt="Media Gallery" />

@@ -325,24 +325,23 @@ export const MoreLikeCard = ({ event, type }) => {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    margin: "56px 0 2rem 3px",
   };
 
   return (
     <>
       {type === "more" && (
-        <div style={headingContainerStyle}>
+        <div style={headingContainerStyle} className="more-header">
           <h2>More Like This</h2>
         </div>
       )}
       {type === "upcoming" && (
-        <div style={headingContainerStyle}>
+        <div style={headingContainerStyle} className="more-header">
           <h2>Upcoming events</h2>
           <Arrows />
         </div>
       )}
       {type === "known" && (
-        <div style={headingContainerStyle}>
+        <div style={headingContainerStyle} className="more-header">
           <h2>Known for</h2>
           <Arrows />
         </div>
