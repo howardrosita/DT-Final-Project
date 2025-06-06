@@ -345,14 +345,6 @@ nav {
   }
 }
 
-.artists-section {
-  max-width: 691px;
-
-  a {
-    text-decoration: none;
-  }
-}
-
 .artists-section h2 {
   margin-left: 5px;
 }
@@ -520,6 +512,10 @@ nav {
   gap: 1rem;
 }
 
+.more-header {
+  margin: 56px 0 2rem 3px;
+}
+
 @keyframes animate1 {
   20% {
     background-image: linear-gradient(to right, #c22026, #c400cb);
@@ -582,6 +578,34 @@ nav {
   }
 }
 
+@media screen and (min-width: 0px) {
+  .artists-section {
+    max-width: 691px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .artists-section {
+    margin-top: 0rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .artists-section {
+    margin-top: -1rem;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .artists-section {
+    margin-top: -4rem;
+  }
+}
+
 /* Media Query for small devices */
 
 @media screen and (max-width: 768px) {
@@ -616,6 +640,10 @@ nav {
     .event-ticket {
       display: none;
     }
+  }
+
+  .more-header {
+    margin: 2rem 0 1rem 3px;
   }
 
   .more-arrows {
