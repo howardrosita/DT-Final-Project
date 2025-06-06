@@ -54,17 +54,6 @@ export const MoreCardDetails = ({
     paddingBottom: "20px",
   };
 
-  const burgerStyle = {
-    position: "absolute", // position h1 inside the rotated div
-    top: "-5px",
-    left: "-15%",
-    transformOrigin: "center",
-    transformBox: "fill-box",
-    width: "16px",
-
-    objectFit: "contain",
-  };
-
   const adsStyle = {
     // counter-rotate the text to keep it straight
 
