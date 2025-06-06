@@ -6,6 +6,7 @@ import Tags from "./components/Tags";
 import UsefulInfo from "./components/UsefulInfo";
 import SocialInfo from "./components/SocialInfo";
 import Drawer from "./components/drawer";
+import ImageIcon from "../../assets/images/image.svg";
 
 const AboutPage = ({ event, type }) => {
   const [eventDetails, setEventDetails] = useState([]);
@@ -89,34 +90,37 @@ const AboutPage = ({ event, type }) => {
 
                 {/* Right component similar to sidebar */}
                 <div className="about_event_right">
-                  {/* Artist Profile card */}
+                  {/* Media Gallery card */}
                   <Card
                     styles={{
                       display: "flex",
                       justifyContent: "space-between",
                       alignItems: "center",
+                      padding: "0.5rem",
+                      width: "fit-content",
+                      margin: "0 0 auto auto",
                     }}
                   >
                     {/* Card content */}
                     <CardContent>
-                      <CardHeader title="Artist Profile" />
-                      {artist.profile && (
-                        <img
-                          src={artist.profile}
-                          alt={`${artist.title} profile`}
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "0.5rem",
+                        }}
+                      >
+                        <img src={ImageIcon} alt="Media Gallery" />
+                        <p
                           style={{
-                            width: "100%",
-                            maxWidth: "200px",
-                            borderRadius: "8px",
+                            fontSize: "1rem",
+                            margin: 0,
                           }}
-                        />
-                      )}
+                        >
+                          Media Gallery
+                        </p>
+                      </div>
                     </CardContent>
-
-                    {/* Card action */}
-                    <CardActions>
-                      <button>Follow</button>
-                    </CardActions>
                   </Card>
 
                   {/* Useful info card */}
